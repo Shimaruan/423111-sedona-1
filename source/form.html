@@ -23,7 +23,7 @@
 
 
     <main class="review-page">
-      <section class="intro intro--version-2">
+      <div class="intro intro--version-2">
         <div class="intro__logo intro__logo--version-2">
           <!--Фоновая картинка intro v2 ========================-->
         </div>
@@ -32,15 +32,15 @@
           <h1>Оставьте свой отзыв</h1>
           <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
-      </section>
+      </div>
 
 
       <form class="review-form" method="post" action="http://echo.htmlacademy.ru">
         <fieldset class="text-fieldset person-form-list">
           <legend class="text-fieldset__legend">Представьтесь:</legend>
 
-          <label class="text-field-label" for="person-form-list__name-id">Имя*:</label>
-          <input class="text-field-input" type="text" id="person-form-list__name-id" name="review-form-list__name" placeholder="Петр" required>
+          <label class="text-field-label" for="person-form__name-id">Имя*:</label>
+          <input class="text-field-input" type="text" id="person-form__name-id" name="review-form__name" placeholder="Петр" required>
 
           <label class="text-field-label" for="person-form__second-name-id">Фамилия*:</label>
           <input class="text-field-input" type="text" id="person-form__second-name-id" name="review-form__second-name" placeholder="Иванов" required>
