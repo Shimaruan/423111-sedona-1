@@ -1,0 +1,26 @@
+.gallery-list__item-picture {
+  background-color: $pre-load_bg-color;
+}
+
+.gallery-list__item-header {
+  @include small-header_typograph();
+}
+
+.gallery-list__item-header--big {
+  @include standart-header_typograph();
+}
+
+.gallery-list__item {
+  &-paragraph {
+    @include paragraph-standart_typograph();
+
+    line-height: $big_line-height;
+  }
+
+  &-rating {
+    @include paragraph-standart_typograph();
+
+    line-height: $big_line-height;
+  }
+}
+

@@ -1,0 +1,5 @@
+.footer-copyright__span {
+  @include paragraph-standart_typograph();
+
+  line-height: $biggest_line-height;
+}

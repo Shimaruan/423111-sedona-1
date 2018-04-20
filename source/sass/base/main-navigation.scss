@@ -1,0 +1,14 @@
+.main-navigation {
+  background-color: #ffffff;
+}
+
+.main-navigation__list-item {
+  background-color: $menu-link_bg-color;
+}
+
+.main-navigation__list-link {
+  @include standart-header_typograph();
+
+  line-height: 40px;
+  color: $menu-link_txt-color;
+}

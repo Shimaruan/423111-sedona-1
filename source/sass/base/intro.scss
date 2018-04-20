@@ -1,0 +1,23 @@
+.intro-description {
+  background-color: $section-v1_bg-color;
+}
+
+.intro__logo {
+  background-color: $menu-link_bg-color;
+}
+
+.intro-description__header {
+  @include standart-header_typograph();
+}
+
+.intro-description__paragraph {
+  @include paragraph-standart_typograph();
+
+  line-height: $biggest_line-height;
+}
+
+.intro-description__paragraph--v2 {
+  @include paragraph-standart_typograph();
+
+  line-height: $big_line-height;
+}

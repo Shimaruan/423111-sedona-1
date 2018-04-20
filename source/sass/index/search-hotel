@@ -1,0 +1,18 @@
+.search-hotel {
+  background-color: $section-v1_bg-color;
+}
+
+
+.search-hotel__bold {
+  @include standart-header_typograph();
+
+  font-size: $biggest_txt-size;
+}
+
+.search-hotel__paragraph {
+  @include paragraph-standart_typograph();
+
+  line-height: $big_line-height;
+
+}
+

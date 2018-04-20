@@ -1,0 +1,65 @@
+
+
+.review-form__legend {
+  @include standart-header_typograph();
+}
+
+.text-fieldset {
+  &__label {
+    @include paragraph-standart_typograph();
+
+    line-height: $biggest_line-height;
+  }
+
+  &__input {
+    background-color: $form-field_bg-color;
+
+    @include placeholder {
+      @include standart-header_typograph();
+    }
+  }
+}
+
+.char-fieldset {
+  &__label {
+    @include paragraph-standart_typograph();
+
+    line-height: $biggest_line-height;
+  }
+
+  &__input {
+    background-color: $form-field_bg-color;
+
+    @include placeholder {
+      @include standart-header_typograph();
+    }
+  }
+}
+
+.radiobutton-fieldset {
+  &__label {
+    @include standart-header_typograph();
+  }
+
+  &__input {
+    background-color: $form-field_bg-color;
+  }
+}
+
+.checkbox-fieldset {
+  &__label {
+    @include standart-header_typograph();
+  }
+
+  &__input {
+    background-color: $form-field_bg-color;
+  }
+}
+
+.text-area-fieldset__field {
+  background-color: $form-field_bg-color;
+
+  @include placeholder {
+    @include standart-header_typograph();
+  }
+}

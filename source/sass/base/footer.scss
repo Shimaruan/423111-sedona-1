@@ -1,0 +1,10 @@
+.page-footer {
+  background-color: $section-v1_bg-color;
+}
+
+
+.page-footer__hashtag {
+  @include standart-header_typograph();
+
+  font-size: $biggest_txt-size;
+}
