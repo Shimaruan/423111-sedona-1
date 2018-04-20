@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - фото и видео</title>
+    <link rel= "stylesheet" href= "css/style.css">
   </head>
 
 
@@ -10,10 +11,10 @@
     <header class="page-header">
       <nav class="main-navigation">
         <ul class="main-navigation__list">
-          <li class="main-navigation__list-item"><a href="index.html">Главная</a></li>
-          <li class="main-navigation__list-item main-navigation__list-item--current"><a>Фото и видео</a></li>
-          <li class="main-navigation__list-item"><a href="form.html">Форма отзыва</a></li>
-          <li class="main-navigation__list-item"><a href="#">HTML Academy</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="index.html">Главная</a></li>
+          <li class="main-navigation__list-item main-navigation__list-item--current"><a class="main-navigation__list-link">Фото и видео</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="form.html">Форма отзыва</a></li>
+          <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="#">HTML Academy</a></li>
         </ul>
         <a class="main-navigation__logo" href="index.html">
           <img class="main-navigation__logo-image" src="http://placehold.it/150x100" alt="логотип" width="150" height="100">
@@ -29,8 +30,8 @@
         </div>
 
         <div class="intro-description">
-          <h1>Фото и видео</h1>
-          <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+          <h1 class="intro-description__header">Фото и видео</h1>
+          <p class="intro-description__paragraph intro-description__paragraph--v2">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
         </div>
       </section>
 
@@ -42,9 +43,9 @@
           </div>
 
           <div class="gallery-list__item-description">
-            <h2>Неродные просторы</h2>
-            <p>Автор:Борис</p>
-            <span class="rating">1350</span>
+            <h2 class="gallery-list__item-header">Неродные просторы</h2>
+            <p class="gallery-list__item-paragraph">Автор:Борис</p>
+            <span class="gallery-list__item-rating">1350</span>
           </div>
         </li>
 
@@ -54,9 +55,9 @@
           </div>
 
           <div class="gallery-list__item-description">
-            <h2>Местная растительность</h2>
-            <p>Автор: Сергей</p>
-            <span class="rating">143</span>
+            <h2 class="gallery-list__item-header">Местная растительность</h2>
+            <p class="gallery-list__item-paragraph">Автор: Сергей</p>
+            <span class="gallery-list__item-rating">143</span>
           </div>
         </li>
 
@@ -66,9 +67,9 @@
           </div>
 
           <div class="gallery-list__item-description">
-            <h2>Дорога на север</h2>
-            <p>Автор: Петр</p>
-            <span class="rating">96</span>
+            <h2 class="gallery-list__item-header">Дорога на север</h2>
+            <p class="gallery-list__item-paragraph">Автор: Петр</p>
+            <span class="gallery-list__item-rating">96</span>
           </div>
         </li>
 
@@ -78,23 +79,23 @@
           </div>
 
           <div class="gallery-list__item-description">
-            <h2>Мост дьявола</h2>
-            <p>Автор: Антон</p>
-            <span class="rating">254</span>
+            <h2 class="gallery-list__item-header">Мост дьявола</h2>
+            <p class="gallery-list__item-paragraph">Автор: Антон</p>
+            <span class="gallery-list__item-rating">254</span>
           </div>
         </li>
 
         <li class="gallery-list__item gallery-list__item-5">
           <div class="gallery-list__item-description ">
-            <h2>Все еще сомневаетесь?</h2>
-            <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <h2 class="gallery-list__item-header gallery-list__item-header--big">Все еще сомневаетесь?</h2>
+            <p class="gallery-list__item-paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             <video class="gallery-list__item-video" controls poster="http://placehold.it/150x100"></video>
           </div>
       </ol>
 
 
       <footer class="page-footer">
-        <p>#VISITSEDONA</p>
+        <p class="hashtag">#VISITSEDONA</p>
 
         <ul class="footer-social">
           <li>
