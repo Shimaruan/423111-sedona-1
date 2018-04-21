@@ -1,0 +1,20 @@
+.text-fieldset {
+  padding-top: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 25px;
+}
+
+.text-fieldset__label {
+  @include paragraph-standart_typograph();
+
+  line-height: $biggest_line-height;
+}
+
+.text-fieldset__input {
+  background-color: $form-field_bg-color;
+}
+
+.text-fieldset__input::placeholder {
+  @include standart-header_typograph();
+}

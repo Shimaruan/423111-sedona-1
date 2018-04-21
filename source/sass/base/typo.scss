@@ -1,0 +1,51 @@
+$main_font-family: "PT Sans", arial, sans-serif;
+
+
+//text size
+$standart_txt-size: 14px;
+$big_txt-size: 18px;
+$biggest_txt-size: 21px;
+
+
+//line height size
+$standart_line-height: 21px;
+$big_line-height: 24px;
+$biggest_line-height: 26px;
+
+
+//text colors
+$standart_txt-color: black;
+$lighter_txt-color: #333333;
+$light_txt-color: white;
+
+
+//form text colors
+$label_txt-color: black;
+$legend_txt-color: black;
+$placeholder_txt-color: black;
+
+
+//elements text colors
+$menu-link_txt-color: white;
+$button_txt-color: white;
+
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2"), url("../fonts/ptsans.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2"), url("../fonts/ptsansbold.woff");
+  font-weight: bold;
+}
+
+.body {
+  font-family: $main_font-family;
+  font-size: $standart_txt-size;
+  line-height: $standart_line-height;
+  text-transform: uppercase;
+  color: $standart_txt-color;
+}
