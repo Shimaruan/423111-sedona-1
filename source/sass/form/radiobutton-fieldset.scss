@@ -5,12 +5,10 @@
   padding-bottom: 25px;
 }
 
-.radiobutton-fieldset {
-  &__label {
-    @include standart-header_typograph();
-  }
+.radiobutton-fieldset__label {
+  @include standart-header_typograph();
+}
 
-  &__input {
-    background-color: $form-field_bg-color;
-  }
+.radiobutton-fieldset__input {
+  background-color: $form-field_bg-color;
 }

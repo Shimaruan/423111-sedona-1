@@ -5,12 +5,10 @@
   padding-bottom: 20px;
 }
 
-.checkbox-fieldset {
-   &__label {
-    @include standart-header_typograph();
-  }
+.checkbox-fieldset__label {
+  @include standart-header_typograph();
+}
 
-  &__input {
-    background-color: $form-field_bg-color;
-  }
+.checkbox-fieldset__input {
+  background-color: $form-field_bg-color;
 }

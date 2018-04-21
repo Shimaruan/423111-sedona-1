@@ -1,4 +1,4 @@
-.text-area-fieldset{
+.text-area-fieldset {
   padding-top: 25px;
   padding-right: 20px;
   padding-left: 20px;
@@ -7,8 +7,8 @@
 
 .text-area-fieldset__field {
   background-color: $form-field_bg-color;
+}
 
-  @include placeholder {
-    @include standart-header_typograph();
-  }
+.text-area-fieldset__field::placeholder {
+  @include standart-header_typograph();
 }

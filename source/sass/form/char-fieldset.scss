@@ -5,18 +5,16 @@
   padding-bottom: 25px;
 }
 
-.char-fieldset {
-   &__label {
-    @include paragraph-standart_typograph();
+.char-fieldset__label {
+  @include paragraph-standart_typograph();
 
-    line-height: $biggest_line-height;
-  }
+  line-height: $biggest_line-height;
+}
 
-  &__input {
-    background-color: $form-field_bg-color;
+.char-fieldset__input {
+  background-color: $form-field_bg-color;
+}
 
-    @include placeholder {
-      @include standart-header_typograph();
-    }
-  }
+.char-fieldset__input::placeholder {
+  @include standart-header_typograph();
 }

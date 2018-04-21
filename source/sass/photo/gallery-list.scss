@@ -21,17 +21,9 @@
   @include standart-header_typograph();
 }
 
-.gallery-list__item {
-  &-paragraph {
-    @include paragraph-standart_typograph();
+.gallery-list__item-rating,
+.gallery-list__item-paragraph {
+  @include paragraph-standart_typograph();
 
-    line-height: $big_line-height;
-  }
-
-  &-rating {
-    @include paragraph-standart_typograph();
-
-    line-height: $big_line-height;
-  }
+  line-height: $big_line-height;
 }
-

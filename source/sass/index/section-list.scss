@@ -24,14 +24,9 @@
   background-color: $section-v2_bg-color;
 }
 
-.section-list__item {
-  &-header {
-    @include standart-header_typograph();
-  }
-
-  &-bold {
-    @include standart-header_typograph();
-  }
+.section-list__item-bold,
+.section-list__item-header {
+  @include standart-header_typograph();
 }
 
 .section-list__item-header--white {

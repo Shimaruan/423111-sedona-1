@@ -32,7 +32,7 @@
 @mixin standart-header_typograph() {
   font-size: $big_txt-size;
   font-weight: bold;
-  line-height:$biggest_line-height;
+  line-height: $biggest_line-height;
   color: $standart_txt-color;
 }
 
@@ -48,11 +48,4 @@
   font-weight: normal;
   line-height: $standart_line-height;
   color: $lighter_txt-color;
-}
-
-@mixin placeholder {
-  &::-webkit-input-placeholder { @content; }
-  &:-moz-placeholder           { @content; }
-  &::-moz-placeholder          { @content; }
-  &:-ms-input-placeholder      { @content; }
 }
