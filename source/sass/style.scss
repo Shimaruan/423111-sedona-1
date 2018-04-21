@@ -1,5 +1,4 @@
 @import 'base/typo';
-
 @import 'base/variables';
 @import 'base/mixins';
 
@@ -8,7 +7,13 @@
 
 @import 'index/section-list';
 @import 'photo/gallery-list';
+
 @import 'form/review-form';
+@import 'form/text-fieldset';
+@import 'form/char-fieldset';
+@import 'form/radiobutton-fieldset';
+@import 'form/checkbox-fieldset';
+@import 'form/text-area-fieldset';
 
 @import 'index/search-hotel';
 

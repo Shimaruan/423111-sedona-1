@@ -3,10 +3,20 @@
 }
 
 .section-list__item--smoke-white {
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+
   background-color: $section-v3_bg-color;
 }
 
 .section-list__item-description {
+  padding-top: 35px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 35px;
+
   background-color: $section-v1_bg-color;
 }
 
@@ -24,11 +34,6 @@
   }
 }
 
-.section-list__item-bold,
-.section-list__item-header {
-  @include standart-header_typograph();
-}
-
 .section-list__item-header--white {
   color: #ffffff;
 }
@@ -43,4 +48,11 @@
 
 .section-list__item-image {
   background-color: $pre-load_bg-color;
+}
+
+.section-list__sub-list-item {
+  padding-top: 35px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 35px;
 }
