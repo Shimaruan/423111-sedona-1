@@ -155,7 +155,7 @@
 
   .section-list__item-picture {
     box-sizing: border-box;
-    min-width: 512px;
+    width: 512px;
     height: 256px;
   }
 
@@ -176,9 +176,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
+    min-width: 33.33%;
     padding-top: 160px;
-    padding-right: 38px;
-    padding-left: 38px;
+    padding-right: 0px;
+    padding-left: 0px;
     padding-bottom: 60px;
   }
 
@@ -219,11 +221,12 @@
   .section-list__item--smoke-white {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 45px;
-    padding-right: 43px;
-    padding-left: 43px;
+    padding-right: 0px;
+    padding-left: 0px;
     padding-bottom: 44px;
-    min-width: 0;
+    min-width: 33.33%;
   }
 
 
@@ -233,3 +236,104 @@
   }
 }
 
+
+@media (min-width: $desktop-up) {
+  .section-list{
+    min-width: 1200px;
+  }
+
+  .section-list__item-1,
+  .section-list__item-2 {
+    min-width: 1200px;
+  }
+
+  .section-list__item-description {
+    padding-right: 29px;
+    padding-left: 29px;
+    min-width: 400px;
+  }
+
+  .section-list__item-header {
+    box-sizing: border-box;
+    margin-bottom: 52px;
+    width: 170px;
+  }
+
+  .section-list__item-header--white {
+    margin-bottom: 0;
+    width: 200px;
+
+    @include biggest-header_typograph();
+    color: #ffffff;
+  }
+
+  .section-list__item-paragraph {
+    width: 270px;
+
+  }
+
+  .section-list__item-picture {
+    width: 800px;
+  }
+
+  .section-list__item-image {
+    display: block;
+  }
+
+  .section-list__sub-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    min-width: 1200px;
+
+    background-color: $section-v1_bg-color;
+  }
+
+  .section-list__sub-list-item {
+    padding-bottom: 83px;
+  }
+
+  .section-list__sub-list-bold {
+    @include biggest-header_typograph();
+    margin-bottom: 22px;
+    width: 180px;
+
+    text-align: center;
+  }
+
+  .section-list__sub-list-paragraph {
+    width: 270px;
+
+    text-align: center;
+  }
+
+  .section-list__sub-list-item-1 {
+    order: 1;
+  }
+
+  .section-list__sub-list-item-2 {
+    order: 3;
+  }
+
+  .section-list__sub-list-item-3 {
+    order: 2;
+  }
+
+  .section-list__item-2-description {
+    order: 2;
+  }
+
+  .section-list__item-picture-2 {
+    order: 1;
+  }
+
+  .section-list__item--smoke-white {
+    padding-bottom: 64px;
+  }
+
+
+  .section-list__item-header--short {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
