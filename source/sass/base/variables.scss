@@ -1,9 +1,17 @@
 //background colors
 
-$menu-link_bg-color: #81b3d2;
+
+$menu-link-v1_bg-color: #81b3d2;
+$menu-link-v2_bg-color: #ffffff;
 $section-v1_bg-color: #ffffff;
 $section-v2_bg-color: #81b3d2;
 $section-v3_bg-color: #eeeeee;
 $pre-load_bg-color: #81b3d2;
 $form-field_bg-color: #f2f2f2;
 $button_bg-color: #81b3d2;
+
+
+//viewports sizes
+
+$tablet-up: 768px;
+$desktop-up: 1200px;
