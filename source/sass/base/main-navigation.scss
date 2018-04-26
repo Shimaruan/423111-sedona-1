@@ -1,7 +1,7 @@
 .main-navigation {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
+  min-width: 100%;
 
   background-color: #ffffff;
 }
@@ -43,12 +43,11 @@
   .main-navigation {
     flex-wrap: nowrap;
     flex-direction: row;
-    min-width: 768px;
   }
 
   .main-navigation__list {
     flex-direction: row;
-    min-width: 768px;
+    width: 100%;
   }
 
   .main-navigation__list-item {
@@ -71,20 +70,11 @@
   .main-navigation__logo {
     position: absolute;
   }
-
 }
 
+
 @media (min-width: $desktop-up) {
-  .main-navigation {
-    min-width: 1200px;
-  }
-
-  .main-navigation__list {
-    min-width: 1200px;
-  }
-
   .main-navigation__list-item--spacing-right {
     margin-right: 238px;
   }
-
 }

@@ -56,18 +56,18 @@
 
   .video-presentation__video {
     height: 502px;
-    width:  648px;
+    width: 648px;
   }
 }
 
 
-@media( min-width: $desktop-up) {
+@media (min-width: $desktop-up) {
   .video-presentation {
     padding-right: 200px;
     padding-left: 200px;
   }
 
   .video-presentation__video {
-    width:  800px;
+    width: 800px;
   }
 }
