@@ -1,7 +1,7 @@
 .checkbox-fieldset {
   padding-top: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
   padding-bottom: 20px;
 }
 
@@ -11,4 +11,19 @@
 
 .checkbox-fieldset__input {
   background-color: $form-field_bg-color;
+}
+
+
+@media (min-width: $tablet-up) {
+  .checkbox-fieldset {
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 4;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: $desktop-up) {
+
 }

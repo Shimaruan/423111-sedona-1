@@ -9,123 +9,116 @@
 
 
   <body class="body body-form-page">
-    <header class="page-header">
-      <nav class="main-navigation">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="index.html">Главная</a></li>
-          <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="photo.html">Фото и видео</a></li>
-          <li class="main-navigation__list-item main-navigation__list-item--current"><a class="main-navigation__list-link">Форма отзыва</a></li>
-          <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="#">HTML Academy</a></li>
-        </ul>
-        <a class="main-navigation__logo" href="index.html">
-          <img class="main-navigation__logo-image" src="http://placehold.it/150x100" alt="логотип" width="150" height="100">
-        </a>
-      </nav>
-    </header>
+    <div class="wrapper">
+      <header class="page-header">
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__list-item"><a class="main-navigation__list-link">Главная</a></li>
+            <li class="main-navigation__list-item main-navigation__list-item--spacing-right"><a class="main-navigation__list-link" href="photo.html">Фото и видео</a></li>
+            <li class="main-navigation__list-item main-navigation__list-item--current"><a class="main-navigation__list-link" href="form.html">Форма отзыва</a></li>
+            <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="#">HTML Academy</a></li>
+          </ul>
+          <div class="main-navigation__logo">
+            <a class="main-navigation__logo-link" href="index.html">
+              <img class="main-navigation__logo-image" src="http://placehold.it/150x100" alt="логотип" width="150" height="100">
+            </a>
+        </div>
+        </nav>
+      </header>
 
 
-    <main class="review-page">
-      <div class="intro intro--version-2">
-        <div class="intro__logo intro__logo--version-2">
-          <!--Фоновая картинка intro v2 ========================-->
+      <main class="review-page">
+        <div class="intro intro--version-2">
+          <div class="intro__logo intro__logo--version-2">
+            <!--Фоновая картинка intro v2 ========================-->
+          </div>
+
+          <div class="intro-description">
+            <h1 class="intro-description__header">Оставьте свой отзыв</h1>
+            <p class="intro-description__paragraph intro-description__paragraph--v2">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
         </div>
 
-        <div class="intro-description">
-          <h1 class="intro-description__header">Оставьте свой отзыв</h1>
-          <p class="intro-description__paragraph intro-description__paragraph--v2">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        </div>
-      </div>
+
+        <form class="review-form" method="post" action="http://echo.htmlacademy.ru">
+          <div class="text-fieldset review-form-fieldset">
+            <h2 class="text-fieldset__legend review-form-fieldset__legend">Представьтесь:</h2>
+            <label class="text-fieldset__label" for="person-form__name-id">Имя*:</label>
+            <input class="text-fieldset__input" type="text" id="person-form__name-id" name="review-form__name" placeholder="Петр" required>
+            <label class="text-fieldset__label" for="person-form__second-name-id">Фамилия*:</label>
+            <input class="text-fieldset__input" type="text" id="person-form__second-name-id" name="review-form__second-name" placeholder="Иванов" required>
+            <label class="text-fieldset__label" for="person-form__third-name-id">Отчество*:</label>
+            <input class="text-fieldset__input" type="text" id="person-form__third-name-id" name="review-form__third-name" placeholder="Александрович" required>
+          </div>
+
+          <div class="char-fieldset review-form-fieldset">
+            <h2 class="char-fieldset__legend review-form-fieldset__legend">Контактная информация:</h2>
+            <label class="char-fieldset__label" for="contacts-form-telephone__id">Контактный телефон*:</label>
+            <input class="char-fieldset__input" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,10}$" id="contacts-form-telephone__id" name="review-form__telephone" placeholder="Введите телефон" required>
+
+            <label class="char-fieldset__label" for="contacts-form-email__id">Электронная почта*:</label>
+            <input class="char-fieldset__input" type="email" id="contacts-form-email__id" name="review-form__email" placeholder="Введите e-mail" required>
+          </div>
+
+          <div class="radiobutton-fieldset review-form-fieldset">
+            <h2 class="radiobutton-fieldset__legend review-form-fieldset__legend">Ваше общее впечатление:</h2>
+            <label class="radiobutton-fieldset__label" for="impression-form-good__id">Скорее положительное:</label>
+            <input class="radiobutton-fieldset__input" type="radio" id="impression-form-good__id" name="review-form__impression" value="good" checked>
+            <label class="radiobutton-fieldset__label" for="impression-form-bad__id">Скорее отрицательное:</label>
+            <input class="radiobutton-fieldset__input" type="radio" id="impression-form-bad__id" name="review-form__impression" value="bad">
+            <label class="radiobutton-fieldset__label" for="impression-form-abstain__id">Затрудняюсь ответить:</label>
+            <input class="radiobutton-fieldset__input" type="radio" id="impression-form-abstain__id" name="review-form__impression" value="abstain">
+          </div>
+
+          <div class="checkbox-fieldset review-form-fieldset">
+            <h2 class="checkbox-fieldset__legend review-form-fieldset__legend">Посещенные достопримечательности:</h2>
+            <label class="checkbox-fieldset__label" for="devil-bridge__id">Мост Дьявола</label>
+            <input class="checkbox-fieldset__input" type="checkbox" id="devil-bridge__id" name="review-form__places" value="devil-bridge" checked>
+            <label class="checkbox-fieldset__label" for="bell-mountain__id">Гора-Колокол</label>
+            <input class="checkbox-fieldset__input" type="checkbox" id="bell-mountain__id" name="review-form__places" value="bell-mountain" checked>
+            <label class="checkbox-fieldset__label" for="slide-park__id">Слайд-парк</label>
+            <input class="checkbox-fieldset__input" type="checkbox" id="slide-park__id" name="review-form__places" value="slide-park" checked>
+            <label class="checkbox-fieldset__label" for="red-mountain__id">Красные скалы</label>
+            <input class="checkbox-fieldset__input" type="checkbox" id="red-mountain__id" name="review-form__places" value="red-mountain">
+          </div>
+
+          <div class="text-area-fieldset review-form-fieldset">
+            <h2 class="text-area-fieldset__legend review-form-fieldset__legend">Опишите свои эмоции:</h2>
+            <textarea class="text-area-fieldset__field" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+
+          <input class="review-form__button button" type="submit" value="Отправить отзыв">
+        </form>
 
 
-      <form class="review-form" method="post" action="http://echo.htmlacademy.ru">
-        <fieldset class="text-fieldset person-form-list">
-          <legend class="review-form__legend text-fieldset__legend">Представьтесь:</legend>
+        <footer class="page-footer">
+          <p class="page-footer__hashtag">#VISITSEDONA</p>
 
-          <label class="text-fieldset__label" for="person-form__name-id">Имя*:</label>
-          <input class="text-fieldset__input" type="text" id="person-form__name-id" name="review-form__name" placeholder="Петр" required>
+          <ul class="footer-social">
+            <li class="footer-social__item">
+              <a class="social-button twitter-button" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a class="social-button facebook-button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a class="social-button youtube-button" href="#">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
 
-          <label class="text-fieldset__label" for="person-form__second-name-id">Фамилия*:</label>
-          <input class="text-fieldset__input" type="text" id="person-form__second-name-id" name="review-form__second-name" placeholder="Иванов" required>
-
-          <label class="text-fieldset__label" for="person-form__third-name-id">Отчество*:</label>
-          <input class="text-fieldset__input" type="text" id="person-form__third-name-id" name="review-form__third-name" placeholder="Александрович" required>
-        </fieldset>
-
-        <fieldset class="char-fieldset contacts-form-list">
-          <legend class="review-form__legend char-fieldset__legend">Контактная информация:</legend>
-
-          <label class="char-fieldset__label" for="contacts-form-telephone__id">Контактный телефон*:</label>
-          <input class="char-fieldset__input" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,10}$" id="contacts-form-telephone__id" name="review-form__telephone" placeholder="Введите телефон" required>
-
-          <label class="char-fieldset__label" for="contacts-form-email__id">Электронная почта*:</label>
-          <input class="char-fieldset__input" type="email" id="contacts-form-email__id" name="review-form__email" placeholder="Введите e-mail" required>
-        </fieldset>
-
-        <fieldset class="radiobutton-fieldset impression-form-list">
-          <legend class="review-form__legend radiobutton-fieldset__legend">Ваше общее впечатление:</legend>
-
-          <label class="radiobutton-fieldset__label" for="impression-form-good__id">Скорее положительное:</label>
-          <input class="radiobutton-fieldset__input" type="radio" id="impression-form-good__id" name="review-form__impression" value="good" checked>
-
-          <label class="radiobutton-fieldset__label" for="impression-form-bad__id">Скорее отрицательное:</label>
-          <input class="radiobutton-fieldset__input" type="radio" id="impression-form-bad__id" name="review-form__impression" value="bad">
-
-          <label class="radiobutton-fieldset__label" for="impression-form-abstain__id">Затрудняюсь ответить:</label>
-          <input class="radiobutton-fieldset__input" type="radio" id="impression-form-abstain__id" name="review-form__impression" value="abstain">
-        </fieldset>
-
-        <fieldset class="checkbox-fieldset places-form-list">
-          <legend class="review-form__legend checkbox-fieldset__legend">Посещенные достопримечательности:</legend>
-          <label class="checkbox-fieldset__label" for="devil-bridge__id">Мост Дьявола</label>
-          <input class="checkbox-fieldset__input" type="checkbox" id="devil-bridge__id" name="review-form__places" value="devil-bridge" checked>
-
-          <label class="checkbox-fieldset__label" for="bell-mountain__id">Гора-Колокол</label>
-          <input class="checkbox-fieldset__input" type="checkbox" id="bell-mountain__id" name="review-form__places" value="bell-mountain" checked>
-
-          <label class="checkbox-fieldset__label" for="slide-park__id">Слайд-парк</label>
-          <input class="checkbox-fieldset__input" type="checkbox" id="slide-park__id" name="review-form__places" value="slide-park" checked>
-
-          <label class="checkbox-fieldset__label" for="red-mountain__id">Красные скалы</label>
-          <input class="checkbox-fieldset__input" type="checkbox" id="red-mountain__id" name="review-form__places" value="red-mountain">
-        </fieldset>
-
-        <fieldset class="text-area-fieldset emotions-form-list">
-          <legend class="review-form__legend text-area-fieldset__legend">Опишите свои эмоции:</legend>
-          <textarea class="text-area-fieldset__field" placeholder="Опишите подробно все свои восторги"></textarea>
-        </fieldset>
-
-        <input class="button" type="submit" value="Отправить отзыв">
-      </form>
-
-
-      <footer class="page-footer">
-        <p class="hashtag">#VISITSEDONA</p>
-
-        <ul class="footer-social">
-          <li>
-            <a class="social-button twitter-button" href="#">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button facebook-button" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button youtube-button" href="#">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-
-        <p class="footer-copyright">
-            <span>Разработано</span>
-            <a class="author-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="footer-copyright">
+            <span class="footer-copyright__span">Разработано</span>
+            <a class="footer-copyright__author-logo" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="visually-hidden">Перейти на сайт автора - HTML Academy</span>
             </a>
           </p>
-      </footer>
+        </footer>
     </main>
   </body>
 </html>

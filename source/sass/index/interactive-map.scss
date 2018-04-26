@@ -1,3 +1,18 @@
 .interactive-map {
+  width: 320px;
+  height: 350px;
+
   background-color: $pre-load_bg-color;
+}
+
+@media (min-width: $tablet-up) {
+  .interactive-map {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-up) {
+  .interactive-map {
+    width: 1200px;
+  }
 }

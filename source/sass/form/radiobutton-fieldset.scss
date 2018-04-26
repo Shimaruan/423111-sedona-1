@@ -1,7 +1,7 @@
 .radiobutton-fieldset {
   padding-top: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
   padding-bottom: 25px;
 }
 
@@ -11,4 +11,17 @@
 
 .radiobutton-fieldset__input {
   background-color: $form-field_bg-color;
+}
+
+
+@media (min-width: $tablet-up) {
+  .radiobutton-fieldset {
+    order: 1;
+    width: 50%;
+  }
+}
+
+
+@media (min-width: $desktop-up) {
+
 }

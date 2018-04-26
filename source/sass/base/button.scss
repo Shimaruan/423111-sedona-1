@@ -1,8 +1,16 @@
 .button {
-  @include standart-header_typograph();
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  width: 100%;
 
+  @include standart-header_typograph();
   font-size: $biggest_txt-size;
   color: $button_txt-color;
+  text-decoration: none;
+  text-align: center;
 
   background-color: $button_bg-color;
 }
