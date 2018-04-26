@@ -43,9 +43,22 @@
   color: $standart_txt-color;
 }
 
+@mixin biggest-header_typograph() {
+  font-size: $biggest_txt-size;
+  font-weight: bold;
+  line-height: $biggest_line-height;
+  color: $standart_txt-color;
+}
+
+
 @mixin paragraph-standart_typograph() {
   font-size: $standart_txt-size;
   font-weight: normal;
   line-height: $standart_line-height;
   color: $lighter_txt-color;
+}
+
+@mixin idents-reset() {
+  margin: 0;
+  padding: 0;
 }

@@ -1,0 +1,16 @@
+.footer-social {
+  @include idents-reset();
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 41px;
+  width: 150px;
+
+  list-style: none;
+}
+
+.footer-social__item {
+  width: 46px;
+  height: 48px;
+
+  background-color: $button_bg-color;
+}

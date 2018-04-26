@@ -1,0 +1,17 @@
+.review-form-fieldset {
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* временная обводка */
+  border: 1px solid black;
+}
+
+.review-form-fieldset__legend {
+  @include standart-header_typograph();
+}

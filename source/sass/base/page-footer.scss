@@ -1,28 +1,37 @@
-.review-form {
+.page-footer {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  align-items: center;
+  padding-top: 35px;
   padding-right: 20px;
   padding-left: 20px;
+  padding-bottom: 20px;
 
   background-color: $section-v1_bg-color;
 }
 
-.review-form__button {
-  order: 6;
+
+.page-footer__hashtag {
+  @include idents_reset;
+  margin-bottom: 35px;
+
+  @include standart-header_typograph();
+
+  font-size: $biggest_txt-size;
 }
 
+
 @media (min-width: $tablet-up) {
-  .review-form {
+  .page-footer {
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
     padding-right: 60px;
     padding-left: 60px;
   }
 }
 
 @media (min-width: $desktop-up) {
-  .review-form {
+  .page-footer {
     padding-right: 120px;
     padding-left: 120px;
   }

@@ -1,7 +1,7 @@
 .char-fieldset {
   padding-top: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0;
+  padding-left: 0;
   padding-bottom: 25px;
 }
 
@@ -17,4 +17,12 @@
 
 .char-fieldset__input::placeholder {
   @include standart-header_typograph();
+}
+
+
+@media (min-width: $tablet-up) {
+  .char-fieldset {
+    order: 3;
+    width: 100%;
+  }
 }

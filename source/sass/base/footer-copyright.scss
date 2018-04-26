@@ -1,5 +1,29 @@
-.footer-copyright__span {
-  @include paragraph-standart_typograph();
+.footer-copyright {
+  @include idents_reset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 128px;
+}
 
+.footer-copyright__span {
+  width: 100px;
+
+  @include paragraph-standart_typograph();
   line-height: $biggest_line-height;
+}
+
+.footer-copyright__author-logo {
+  width: 27px;
+  height: 34px;
+
+  background-color: $pre-load_bg-color;
+}
+
+@media (min-width: $tablet-up) {
+  .footer-copyright {
+    justify-content: flex-end;
+    padding-bottom: 37px;
+    width: 135px;
+  }
 }

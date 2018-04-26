@@ -1,7 +1,7 @@
 .text-area-fieldset {
   padding-top: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0;
+  padding-left: 0;
   padding-bottom: 50px;
 }
 
@@ -11,4 +11,12 @@
 
 .text-area-fieldset__field::placeholder {
   @include standart-header_typograph();
+}
+
+
+@media (min-width: $tablet-up) {
+  .text-area-fieldset {
+    order: 5;
+    width: 100%;
+  }
 }

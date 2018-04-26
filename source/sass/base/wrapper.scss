@@ -1,18 +1,18 @@
-.interactive-map {
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
   width: 320px;
-  height: 350px;
-
-  background-color: $pre-load_bg-color;
 }
 
 @media (min-width: $tablet-up) {
-  .interactive-map {
+  .wrapper {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-up) {
-  .interactive-map {
+  .wrapper {
     width: 1200px;
   }
 }

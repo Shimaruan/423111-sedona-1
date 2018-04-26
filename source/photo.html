@@ -2,129 +2,136 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона - фото и видео</title>
     <link rel= "stylesheet" href= "css/style.css">
   </head>
 
 
   <body class="body body-photo-page">
-    <header class="page-header">
-      <nav class="main-navigation">
-        <ul class="main-navigation__list">
-          <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="index.html">Главная</a></li>
-          <li class="main-navigation__list-item main-navigation__list-item--current"><a class="main-navigation__list-link">Фото и видео</a></li>
-          <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="form.html">Форма отзыва</a></li>
-          <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="#">HTML Academy</a></li>
-        </ul>
-        <a class="main-navigation__logo" href="index.html">
-          <img class="main-navigation__logo-image" src="http://placehold.it/150x100" alt="логотип" width="150" height="100">
-        </a>
-      </nav>
-    </header>
-
-
-    <main class="photo-page">
-      <section class="intro intro--version-2">
-        <div class="intro__logo intro__logo--version-2">
-          <!--Фоновая картинка intro v2 ========================-->
+    <div class="wrapper">
+      <header class="page-header">
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="index.html">Главная</a></li>
+            <li class="main-navigation__list-item main-navigation__list-item--spacing-right main-navigation__list-item--current"><a class="main-navigation__list-link" href="photo.html">Фото и видео</a></li>
+            <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="form.html">Форма отзыва</a></li>
+            <li class="main-navigation__list-item"><a class="main-navigation__list-link" href="#">HTML Academy</a></li>
+          </ul>
+          <div class="main-navigation__logo">
+            <a class="main-navigation__logo-link" href="index.html">
+              <img class="main-navigation__logo-image" src="http://placehold.it/150x100" alt="логотип" width="150" height="100">
+            </a>
         </div>
-
-        <div class="intro-description">
-          <h1 class="intro-description__header">Фото и видео</h1>
-          <p class="intro-description__paragraph intro-description__paragraph--v2">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
-        </div>
-      </section>
+        </nav>
+      </header>
 
 
-      <ol class="gallery-list">
-        <li class="gallery-list__item gallery-list__item-1">
-          <div class="gallery-list__item-picture">
-            <img src="http://placehold.it/150x100" alt="убегающая в закат дорога" width="150" height="100">
+      <main class="photo-page">
+        <section class="intro intro--version-2">
+          <div class="intro__logo intro__logo--version-2">
+            <!--Фоновая картинка intro v2 ========================-->
           </div>
 
-          <div class="gallery-list__item-description">
-            <h2 class="gallery-list__item-header">Неродные просторы</h2>
-            <p class="gallery-list__item-paragraph">Автор:Борис</p>
-            <span class="gallery-list__item-rating">1350</span>
+          <div class="intro-description intro-description--version-2">
+            <h1 class="intro-description__header intro-description__header--version-2">Фото и видео</h1>
+            <p class="intro-description__paragraph intro-description__paragraph--v2">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
           </div>
-        </li>
-
-        <li class="gallery-list__item gallery-list__item-2">
-          <div class="gallery-list__item-picture">
-            <img src="http://placehold.it/150x100" alt="божественный кактус" width="150" height="100">
-          </div>
-
-          <div class="gallery-list__item-description">
-            <h2 class="gallery-list__item-header">Местная растительность</h2>
-            <p class="gallery-list__item-paragraph">Автор: Сергей</p>
-            <span class="gallery-list__item-rating">143</span>
-          </div>
-        </li>
-
-        <li class="gallery-list__item gallery-list__item-3">
-          <div class="gallery-list__item-picture">
-            <img src="http://placehold.it/150x100" alt="утопающие в лесах изгибы горной дороги" width="150" height="100">
-          </div>
-
-          <div class="gallery-list__item-description">
-            <h2 class="gallery-list__item-header">Дорога на север</h2>
-            <p class="gallery-list__item-paragraph">Автор: Петр</p>
-            <span class="gallery-list__item-rating">96</span>
-          </div>
-        </li>
-
-        <li class="gallery-list__item gallery-list__item-4">
-          <div class="gallery-list__item-picture">
-            <img src="http://placehold.it/150x100" alt="природный мост из камня" width="150" height="100">
-          </div>
-
-          <div class="gallery-list__item-description">
-            <h2 class="gallery-list__item-header">Мост дьявола</h2>
-            <p class="gallery-list__item-paragraph">Автор: Антон</p>
-            <span class="gallery-list__item-rating">254</span>
-          </div>
-        </li>
-
-        <li class="gallery-list__item gallery-list__item-5">
-          <div class="gallery-list__item-description ">
-            <h2 class="gallery-list__item-header gallery-list__item-header--big">Все еще сомневаетесь?</h2>
-            <p class="gallery-list__item-paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          </div>
-
-        <li class="gallery-list__item gallery-list__item-video">
-          <video class="gallery-list__item-video" controls poster="http://placehold.it/150x100"></video>
-        </li>
-      </ol>
+        </section>
 
 
-      <footer class="page-footer">
-        <p class="hashtag">#VISITSEDONA</p>
+        <ol class="gallery-list">
+          <li class="gallery-list__item gallery-list__item-1">
+            <div class="gallery-list__item-picture gallery-list__item-picture-1">
+              <img class="gallery-list__item-image" src="http://placehold.it/150x100" alt="убегающая в закат дорога" width="150" height="100">
+            </div>
 
-        <ul class="footer-social">
-          <li>
-            <a class="social-button twitter-button" href="#">
-              <span class="visually-hidden">Твиттер</span>
-            </a>
+            <div class="gallery-list__item-description">
+              <h2 class="gallery-list__item-header">Неродные просторы</h2>
+              <p class="gallery-list__item-paragraph">Автор:Борис</p>
+              <span class="gallery-list__item-rating">1350</span>
+            </div>
           </li>
-          <li>
-            <a class="social-button facebook-button" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button youtube-button" href="#">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
 
-        <p class="footer-copyright">
-          <span>Разработано</span>
-          <a class="author-logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Перейти на сайт автора - HTML Academy</span>
-          </a>
-        </p>
-      </footer>
-    </main>
+          <li class="gallery-list__item gallery-list__item-2">
+            <div class="gallery-list__item-picture">
+              <img class="gallery-list__item-image" src="http://placehold.it/150x100" alt="божественный кактус" width="150" height="100">
+            </div>
+
+            <div class="gallery-list__item-description">
+              <h2 class="gallery-list__item-header">Местная растительность</h2>
+              <p class="gallery-list__item-paragraph">Автор: Сергей</p>
+              <span class="gallery-list__item-rating">143</span>
+            </div>
+          </li>
+
+          <li class="gallery-list__item gallery-list__item-3">
+            <div class="gallery-list__item-picture">
+              <img class="gallery-list__item-image" src="http://placehold.it/150x100" alt="утопающие в лесах изгибы горной дороги" width="150" height="100">
+            </div>
+
+            <div class="gallery-list__item-description">
+              <h2 class="gallery-list__item-header">Дорога на север</h2>
+              <p class="gallery-list__item-paragraph">Автор: Петр</p>
+              <span class="gallery-list__item-rating">96</span>
+            </div>
+          </li>
+
+          <li class="gallery-list__item gallery-list__item-4">
+            <div class="gallery-list__item-picture">
+              <img class="gallery-list__item-image" src="http://placehold.it/150x100" alt="природный мост из камня" width="150" height="100">
+            </div>
+
+            <div class="gallery-list__item-description">
+              <h2 class="gallery-list__item-header">Мост дьявола</h2>
+              <p class="gallery-list__item-paragraph">Автор: Антон</p>
+              <span class="gallery-list__item-rating">254</span>
+            </div>
+          </li>
+        </ol>
+
+
+        <section class="video-presentation">
+          <div class="video-presentation__description ">
+            <h2 class="video-presentation__header">Все еще сомневаетесь?</h2>
+            <p class="video-presentation__paragraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+
+          <div>
+            <video class="video-presentation__video" controls poster="http://placehold.it/150x100"></video>
+          </div>
+        </section>
+
+
+        <footer class="page-footer">
+          <p class="page-footer__hashtag">#VISITSEDONA</p>
+
+          <ul class="footer-social">
+            <li class="footer-social__item">
+              <a class="social-button twitter-button" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a class="social-button facebook-button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="footer-social__item">
+              <a class="social-button youtube-button" href="#">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+
+          <p class="footer-copyright">
+            <span class="footer-copyright__span">Разработано</span>
+            <a class="footer-copyright__author-logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">Перейти на сайт автора - HTML Academy</span>
+            </a>
+          </p>
+        </footer>
+      </main>
+    </div>
   </body>
 </html>
