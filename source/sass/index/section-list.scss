@@ -33,6 +33,13 @@
   background-color: $section-v2_bg-color;
 }
 
+.section-list__item-1 .section-list__item-description {
+  background-image: url(../img/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center -21px;
+}
+
 .section-list__item-header {
   @include idents-reset();
   margin-bottom: 45px;
@@ -83,10 +90,41 @@
 }
 
 .section-list__sub-list-bold {
+  position: relative;
+
   display: block;
   margin-bottom: 11px;
 
   @include standart-header_typograph();
+}
+
+.section-list__sub-list-bold::before {
+    position: absolute;
+    content: "";
+    left: -50px;
+    top: -12px;
+
+    display: block;
+    width: 40px;
+    height: 38px;
+}
+
+.section-list__sub-list-item-1 .section-list__sub-list-bold::before {
+    background-image: url(../img/icon-house-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-list__sub-list-item-2 .section-list__sub-list-bold::before {
+    background-image: url(../img/icon-gift-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-list__sub-list-item-3 .section-list__sub-list-bold::before {
+    background-image: url(../img/icon-burger-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .section-list__sub-list-paragraph {

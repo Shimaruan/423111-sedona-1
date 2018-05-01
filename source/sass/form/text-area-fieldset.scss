@@ -1,11 +1,36 @@
 .text-area-fieldset {
-  padding-top: 25px;
-  padding-right: 0;
-  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 50px;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.text-area-fieldset__legend {
+  @include idents-reset();
+  width: 100%;
+  margin-bottom: 18px;
+
+  @include standart-header_typograph();
+  text-align:center;
 }
 
 .text-area-fieldset__field {
+  box-sizing: border-box;
+  padding-top: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 278px;
+  height: 162px;
+
+  font-family: inherit;
+
+  border: none;
   background-color: $form-field_bg-color;
 }
 
@@ -13,10 +38,63 @@
   @include standart-header_typograph();
 }
 
-
 @media (min-width: $tablet-up) {
   .text-area-fieldset {
     order: 5;
+    padding-top: 38px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 58px;
     width: 100%;
+
+    border: none;
+  }
+
+  .text-area-fieldset__legend {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 56px;
+
+    @include biggest-header_typograph();
+  }
+
+
+  .text-area-fieldset__legend::before {
+    flex-grow: 1;
+    display: block;
+    content: " ";
+    margin-right: 75px;
+    min-width: 10px;
+    height: 1px;
+
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .text-area-fieldset__legend::after {
+    flex-grow: 1;
+    display: block;
+    content: " ";
+    margin-left: 75px;
+    min-width: 10px;
+    height: 1px;
+
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  .text-area-fieldset__field {
+    width: 648px;
+  }
+}
+
+
+@media (min-width: $desktop-up) {
+  .text-area-fieldset {
+    padding-top: 34px;
+    padding-bottom: 58px;
+  }
+
+  .text-area-fieldset__field {
+    width: 960px;
   }
 }

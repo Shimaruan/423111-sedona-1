@@ -14,10 +14,22 @@
 }
 
 .footer-copyright__author-logo {
+  display: block;
   width: 27px;
   height: 34px;
+}
 
-  background-color: $pre-load_bg-color;
+.footer-copyright__author-icon {
+  fill: #000000;
+
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  };
 }
 
 @media (min-width: $tablet-up) {

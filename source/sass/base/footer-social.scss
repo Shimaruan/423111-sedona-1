@@ -8,9 +8,29 @@
   list-style: none;
 }
 
-.footer-social__item {
+.footer-social__button {
+  display: flex;
   width: 46px;
   height: 48px;
 
   background-color: $button_bg-color;
+
+
+  &:hover {
+    background-color: $button-hover_bg-color;
+  }
+
+  &:active {
+    background-color: $button-down_bg-color;
+  }
+}
+
+.footer-social__button-icon {
+  margin: auto;
+
+  fill: #ffffff;
+}
+
+.footer-social__button:active .footer-social__button-icon {
+  fill: rgba(255, 255, 255, 0.3);
 }
