@@ -170,15 +170,26 @@
     width: 100%;
   }
 
+  .gallery-list__item-1 .gallery-list__item-description {
+    padding-right: 0;
+  }
+
   .gallery-list__item-description {
-    margin-top: -73px;
+    margin-top: -78px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .gallery-list__item-picture {
     width: 400px;
+    margin-bottom: 0;
   }
 
   .gallery-list__item-picture-1 {
     width: 1200px;
+  }
+
+  .gallery-list__item-rating {
+    width: 4.2%;
   }
 }
