@@ -2,6 +2,8 @@
   @include idents-reset();
 
   list-style: none;
+
+  counter-reset: advantage;
 }
 
 .section-list__item {
@@ -18,7 +20,9 @@
   padding-bottom: 30px;
 
   background-color: $section-v3_bg-color;
-}
+  color: inherit;
+  border-bottom: 1px solid #d6d6d6;
+  }
 
 .section-list__item-description {
   padding-top: 57px;
@@ -41,21 +45,37 @@
 }
 
 .section-list__item-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @include idents-reset();
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 
   @include standart-header_typograph();
   text-align: center;
 }
 
+
+.section-list__item-header::after {
+  display: block;
+  padding-top: 9px;
+  content: "– № " counter(advantage) " –";
+
+  @include paragraph-standart_typograph();
+  color: inherit;
+
+  counter-increment: advantage;
+}
+
 .section-list__item-header--white {
-  color: #ffffff;
+   color: #ffffff;
 }
 
 .section-list__item-paragraph {
   @include idents-reset();
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
 
   @include paragraph-standart_typograph();
   text-align: center;
@@ -77,7 +97,10 @@
 
 .section-list__sub-list {
   @include idents-reset();
-  padding-top: 31px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+  padding-bottom: 7px;
 
   list-style: none;
 }
@@ -86,7 +109,7 @@
   @include idents-reset();
   padding-right: 20px;
   padding-left: 70px;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
 }
 
 .section-list__sub-list-bold {
@@ -101,8 +124,8 @@
 .section-list__sub-list-bold::before {
     position: absolute;
     content: "";
-    left: -50px;
-    top: -12px;
+    left: -52px;
+    top: -10px;
 
     display: block;
     width: 40px;
@@ -136,6 +159,12 @@
 
 .section-list__item-2-description {
   padding-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .section-list__item--smoke-white:last-child {
+    border-bottom: none;
+  }
 }
 
 @media (min-width: $tablet-up) {
@@ -199,6 +228,7 @@
 
   .section-list__sub-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     padding-top: 0;
     width: 100%;
@@ -262,7 +292,6 @@
     padding-bottom: 44px;
     width: 33.33%;
   }
-
 
   .section-list__item-header--short {
     padding-right: 10px;
