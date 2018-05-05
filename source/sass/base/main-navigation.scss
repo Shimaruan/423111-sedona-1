@@ -8,9 +8,20 @@
 
 .main-navigation__list {
   @include idents-reset();
-  display: flex;
+  display: none;
   flex-direction: column;
   list-style: none;
+}
+
+.main-navigation__list-opened {
+  display: flex;
+}
+
+.main-navigation__list-open {
+  display: flex;
+
+  animation-name: slideInUp;
+  animation-duration: 0.5s;
 }
 
 .main-navigation__list-link {
@@ -55,7 +66,7 @@
   left: 50%;
 
   display: block;
-  margin-left: -51px;
+  margin-left: -50px;
   width: 102px;
   height: 83px;
 }
@@ -90,6 +101,50 @@
   }
 }
 
+.main-navigation__close-button {
+  position: absolute;
+  top: -215px;
+  right: 10px;
+
+  @include idents-reset;
+  display: none;
+  width: 45px;
+  height: 40px;
+
+  border: none;
+  background: none;
+  background-image: url(../img/icon-cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+  &:hover {
+    background-image: url(../img/icon-cross.svg);
+  }
+
+  &:active {
+    background-image: url(../img/icon-cross.svg);
+  }
+}
+
+.main-navigation__close-button-show {
+  display: block;
+}
+
+/* Анимация------------------------------------------------- */
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
 @media (max-width: 767px) {
   .main-navigation__list-item:first-child .main-navigation__list-link {
     border-top: none;
@@ -99,7 +154,7 @@
     padding-bottom: 8px;
 
     border-bottom: none;
-    box-shadow: inset 0 -5px 17px -10px #000;
+    box-shadow: inset 0 -7px 7px -7px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -110,6 +165,7 @@
   }
 
   .main-navigation__list {
+    display: flex;
     flex-direction: row;
     width: 100%;
   }
@@ -123,8 +179,8 @@
   }
 
   .main-navigation__list-link {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
     @include small-header_typograph();
     line-height: $biggest_line-height;
@@ -159,6 +215,10 @@
     }
   }
 
+  .main-navigation__close-button {
+    display: none;
+  }
+
   .main-navigation {
     position: relative;
   }
@@ -186,7 +246,7 @@
 
 @media (min-width: $desktop-up) {
   .main-navigation__logo {
-    margin-left: -94px;
+    margin-left: -95px;
   }
 
   .main-navigation__logo-link {

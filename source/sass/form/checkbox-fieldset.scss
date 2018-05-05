@@ -139,13 +139,12 @@
     margin-bottom: 32px;
     width: 40%;
   }
-}
 
-@media ( max-width: 1199px ) {
   .checkbox-fieldset__label:last-child {
     width: 45%;
   }
 }
+
 
 @media (min-width: $desktop-up) {
   .checkbox-fieldset {
@@ -181,5 +180,9 @@
     align-items: center;
     width: 46%;
     flex: 0 1 auto;
+  }
+
+  .checkbox-fieldset__label:last-child {
+    width: 46%;
   }
 }
