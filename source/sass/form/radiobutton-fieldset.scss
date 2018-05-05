@@ -1,16 +1,81 @@
 .radiobutton-fieldset {
-  padding-top: 25px;
-  padding-right: 0;
-  padding-left: 0;
-  padding-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  box-sizing: border-box;
+  padding-top: 18px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.radiobutton-fieldset__legend {
+  @include idents-reset();
+  width: 100%;
+  margin-bottom: 22px;
+
+  @include standart-header_typograph();
+  text-align: center;
 }
 
 .radiobutton-fieldset__label {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  width: 100%;
+
   @include standart-header_typograph();
+  text-transform: initial;
 }
 
-.radiobutton-fieldset__input {
+.radiobutton-fieldset__input + .radiobutton-fieldset__label span {
+  display: block;
+  margin-right: 23px;
+  min-width: 56px;
+  min-height: 56px;
+
+  border-radius: 50%;
   background-color: $form-field_bg-color;
+
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
+
+.radiobutton-fieldset__input:checked + .radiobutton-fieldset__label span {
+  display: block;
+  box-sizing: border-box;
+  margin-right: 23px;
+  min-width: 56px;
+  min-height: 56px;
+
+  border-radius: 50%;
+  border-width: 17px;
+  border-style: solid;
+  border-color: $form-field_bg-color;
+  background-color: #333333;
+
+
+  &:hover {
+    border-color: #e5e5e5;
+  }
+
+  &:active {
+    border-color: #d5d5d5;
+    background-color: #a4a4a4;
+  }
+}
+
+.radiobutton-fieldset__input:focus + .radiobutton-fieldset__label span {
+  outline: 2px solid #81b3d2;
 }
 
 
@@ -18,5 +83,37 @@
   .radiobutton-fieldset {
     order: 1;
     width: 50%;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+
+    border: none;
+    border-right: 1px solid #dbdbdb;
+  }
+
+  .radiobutton-fieldset__legend {
+    margin-bottom: 55px;
+
+    @include biggest-header_typograph();
+    text-align: left;
+  }
+
+  .radiobutton-fieldset__label {
+    margin-bottom: 20px;
+  }
+
+  .radiobutton-fieldset__label:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: $desktop-up) {
+  .radiobutton-fieldset {
+    padding-left: 4px;
+  }
+
+  .radiobutton-fieldset__legend {
+    padding-left: 78px;
   }
 }

@@ -1,16 +1,36 @@
 .button {
   box-sizing: border-box;
-  padding-top: 15px;
+  padding-top: 16px;
   padding-right: 10px;
   padding-left: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   width: 100%;
 
   @include standart-header_typograph();
+  font-family: inherit;
   font-size: $biggest_txt-size;
   color: $button_txt-color;
   text-decoration: none;
   text-align: center;
 
   background-color: $button_bg-color;
+
+
+  &:hover {
+    background-color: $button-hover_bg-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $button-down_bg-color;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.button-disabled {
+  background-color: #e5e5e5;
 }

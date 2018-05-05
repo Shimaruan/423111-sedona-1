@@ -2,7 +2,21 @@
   width: 320px;
   height: 350px;
 
-  background-color: $pre-load_bg-color;
+  background-image:
+    url("../img/icon-map-marker.svg"),
+    url("../img/bg-map-mobile@1x.jpg");
+
+  background-repeat:
+    no-repeat,
+    no-repeat;
+
+  background-position:
+    center,
+    center;
+}
+
+iframe {
+  width: 100%;
 }
 
 @media (min-width: $tablet-up) {

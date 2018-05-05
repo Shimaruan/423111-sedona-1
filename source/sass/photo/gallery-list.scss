@@ -3,8 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  padding-right: 20px;
-  padding-left: 20px;
   min-width: 100%;
 
   background-color: $section-v1_bg-color;
@@ -14,14 +12,18 @@
 .gallery-list__item {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 21px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 21px;
   width: 100%;
 
   border-top: 1px solid #f2f2f2;
 }
 
 .gallery-list__item-picture {
+  display: block;
+  margin-bottom: 15px;
   width: 280px;
   height: 280px;
 
@@ -32,24 +34,48 @@
   display: block;
 }
 
+.gallery-list__item-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .gallery-list__item-header {
   @include idents-reset();
-
   @include small-header_typograph();
 }
 
 .gallery-list__item-paragraph {
   @include idents-reset();
+  margin-bottom: 6px;
 
   @include paragraph-standart_typograph();
   line-height: $big_line-height;
-  text-transform: capitalize;
+  text-transform: initial;
 }
 
 .gallery-list__item-rating {
+  position: relative;
+  padding-left: 36px;
+
   @include paragraph-standart_typograph();
   line-height: $big_line-height;
   font-weight: bold;
+}
+
+.gallery-list__item-rating::before {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+
+  display: block;
+  content: " ";
+  width: 22px;
+  height: 22px;
+
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -57,6 +83,7 @@
   .gallery-list {
     padding-right: 60px;
     padding-left: 60px;
+    padding-bottom: 38px;
     min-width: 100%;
   }
 
@@ -64,11 +91,46 @@
     padding-top: 0;
     padding-right: 0;
     padding-left: 0;
+    padding-bottom: 17px;
 
     width: 50%;
 
     border-top: none;
     background-color: $section-v4_bg-color;
+  }
+
+  .gallery-list__item-description {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 36px;
+    padding-left: 20px;
+  }
+
+  .gallery-list__item-1 .gallery-list__item-description {
+    padding-right: 20px;
+  }
+
+  .gallery-list__item-header {
+    order: 1;
+    flex: 1 0 auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  .gallery-list__item-paragraph {
+    order: 3;
+    flex: 0 0 auto;
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .gallery-list__item-rating {
+    position: relative;
+    top: 14px;
+
+    order: 2;
+    flex: 0 0 auto;
+    width: 5%;
   }
 
   .gallery-list__item-1 {
@@ -107,15 +169,26 @@
     width: 100%;
   }
 
+  .gallery-list__item-1 .gallery-list__item-description {
+    padding-right: 0;
+  }
+
   .gallery-list__item-description {
-    margin-top: -73px;
+    margin-top: -78px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .gallery-list__item-picture {
     width: 400px;
+    margin-bottom: 0;
   }
 
   .gallery-list__item-picture-1 {
     width: 1200px;
+  }
+
+  .gallery-list__item-rating {
+    width: 4.2%;
   }
 }
