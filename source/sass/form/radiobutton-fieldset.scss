@@ -74,8 +74,8 @@
   }
 }
 
-.radiobutton-fieldset__input {
-  display: none;
+.radiobutton-fieldset__input:focus + .radiobutton-fieldset__label span {
+  outline: 2px solid #81b3d2;
 }
 
 
