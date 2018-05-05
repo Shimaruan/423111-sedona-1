@@ -18,7 +18,7 @@
   margin-bottom: 22px;
 
   @include standart-header_typograph();
-  text-align:center;
+  text-align: center;
 }
 
 .text-fieldset__label {
@@ -37,12 +37,13 @@
   flex-basis: auto;
   width: 60%;
   box-sizing: border-box;
-  padding-top: 20px;
+  padding-top: 16px;
   padding-right: 5px;
   padding-left: 22px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   margin-bottom: 20px;
 
+  @include standart-header_typograph();
   font-family: inherit;
 
   border: none;
@@ -55,18 +56,17 @@
 
   &:focus {
     outline-color: #e5e5e5;
-    padding-top: 16px;
+    padding-top: 12px;
     padding-right: 18px;
     padding-left: 18px;
-    padding-bottom: 16px;
-    background-color: #ffffff ;
+    padding-bottom: 12px;
+    background-color: #ffffff;
     border: 4px solid #e5e5e5;
   }
 }
 
 .text-fieldset__input::placeholder {
   @include standart-header_typograph();
-
 }
 
 

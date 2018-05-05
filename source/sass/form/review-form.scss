@@ -41,7 +41,7 @@
     display: block;
 
     @include paragraph-standart_typograph();
-    Line-height: $biggest_line-height;
+    line-height: $biggest_line-height;
   }
 }
 

@@ -24,7 +24,7 @@
   margin-bottom: 18px;
 
   @include standart-header_typograph();
-  text-align:center;
+  text-align: center;
 }
 
 .checkbox-fieldset__label {
@@ -65,7 +65,7 @@
 
   border-radius: 10%;
   background-color: $form-field_bg-color;
-  background-image: url(../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -76,7 +76,7 @@
 
   &:active {
     background-color: #d5d5d5;
-    background-image: url(../img/icon-tick-checked.svg);
+    background-image: url("../img/icon-tick-checked.svg");
   }
 }
 

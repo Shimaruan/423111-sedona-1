@@ -4,9 +4,9 @@
 
   background-color: $section-v2_bg-color;
   background-image:
-    url(../img/text-sedona-index.svg),
-    url(../img/bg-intro-triangle-mobile.svg),
-    url(../img/bg-back-mobile@1x.jpg);
+    url("../img/text-sedona-index.svg"),
+    url("../img/bg-intro-triangle-mobile.svg"),
+    url("../img/bg-back-mobile@1x.jpg");
   background-repeat:
     no-repeat,
     no-repeat,
@@ -90,23 +90,23 @@
   .intro__logo {
     height: 518px;
 
-  background-color: $section-v2_bg-color;
-  background-image:
-    url(../img/text-sedona-index.svg),
-    url(../img/intro-triangle-tablet.svg),
-    url(../img/bg-back-tablet.jpg);
-  background-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat;
-  background-size:
-    460px,
-    100%,
-    cover;
-  background-position:
-    center 75px,
-    bottom,
-    center;
+    background-color: $section-v2_bg-color;
+    background-image:
+      url("../img/text-sedona-index.svg"),
+      url("../img/intro-triangle-tablet.svg"),
+      url("../img/bg-back-tablet.jpg");
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat;
+    background-size:
+      460px,
+      100%,
+      cover;
+    background-position:
+      center 75px,
+      bottom,
+      center;
   }
 
   .intro--form .intro__logo {
@@ -167,9 +167,9 @@
 
     background-color: $section-v2_bg-color;
     background-image:
-      url(../img/text-sedona-index.svg),
-      url(../img/bg-intro-triangle-mobile.svg), /* необходимо вставить актуальное изображение, когда появится */
-      url(../img/bg-back-mobile@1x.jpg); /* необходимо вставить актуальное изображение, когда появится */
+      url("../img/text-sedona-index.svg"),
+      url("../img/bg-intro-triangle-mobile.svg"),
+      url("../img/bg-back-mobile@1x.jpg");
     background-repeat:
       no-repeat,
       no-repeat,

@@ -16,20 +16,19 @@
   background-color: $button_bg-color;
 
 
-    &:hover {
-      background-color: $button-hover_bg-color;
-    }
+  &:hover {
+    background-color: $button-hover_bg-color;
+  }
 
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
 
-      background-color: $button-down_bg-color;
-    }
+    background-color: $button-down_bg-color;
+  }
 
-    &:disabled {
-      background-color: #e5e5e5;
-    }
-
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .button-disabled {

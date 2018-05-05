@@ -71,8 +71,9 @@
   height: 83px;
 }
 
-.main-navigation__burger-button {
+.main-navigation__button-burger {
   @include idents-reset();
+  display: none;
   margin-top: auto;
   margin-right: 20px;
   margin-left: auto;
@@ -83,25 +84,25 @@
   border: none;
   background: none;
   outline: none;
-  background-image: url(../img/icon-menu.svg);
+  background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: center;
 
 
   &:hover {
-    background-image: url(../img/icon-menu.svg);
+    background-image: url("../img/icon-menu.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &:active {
-    background-image: url(../img/icon-menu.svg);
+    background-image: url("../img/icon-menu.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 
-.main-navigation__close-button {
+.main-navigation__button-close {
   position: absolute;
   top: -215px;
   right: 10px;
@@ -113,21 +114,21 @@
 
   border: none;
   background: none;
-  background-image: url(../img/icon-cross.svg);
+  background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
 
 
   &:hover {
-    background-image: url(../img/icon-cross.svg);
+    background-image: url("../img/icon-cross.svg");
   }
 
   &:active {
-    background-image: url(../img/icon-cross.svg);
+    background-image: url("../img/icon-cross.svg");
   }
 }
 
-.main-navigation__close-button-show {
+.main-navigation__button-show {
   display: block;
 }
 
@@ -160,6 +161,7 @@
 
 @media (min-width: $tablet-up) {
   .main-navigation {
+    position: relative;
     flex-wrap: nowrap;
     flex-direction: row;
   }
@@ -219,8 +221,8 @@
     display: none;
   }
 
-  .main-navigation {
-    position: relative;
+  .main-navigation__button-show {
+    display: none;
   }
 
   .main-navigation__logo {

@@ -17,7 +17,7 @@
   margin-bottom: 22px;
 
   @include standart-header_typograph();
-  text-align:center;
+  text-align: center;
 }
 
 .radiobutton-fieldset__label {
@@ -49,8 +49,6 @@
     background-color: #d5d5d5;
   }
 }
-
-
 
 .radiobutton-fieldset__input:checked + .radiobutton-fieldset__label span {
   display: block;
@@ -105,7 +103,7 @@
   }
 
   .radiobutton-fieldset__label:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 

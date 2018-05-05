@@ -17,7 +17,7 @@
   margin-bottom: 18px;
 
   @include standart-header_typograph();
-  text-align:center;
+  text-align: center;
 }
 
 .text-area-fieldset__field {
@@ -28,10 +28,13 @@
   width: 278px;
   height: 162px;
 
+  @include standart-header_typograph();
   font-family: inherit;
 
   border: none;
   background-color: $form-field_bg-color;
+
+  resize: vertical;
 }
 
 .text-area-fieldset__field::placeholder {
