@@ -28,8 +28,11 @@
           </ul>
           <div class="main-navigation__logo">
             <a class="main-navigation__logo-link" href="index.html">
-              <img class="main-navigation__logo-image" src="../img/logo-sedona-mobile.svg" alt="логотип" width="102" height="83">
-              <img class="main-navigation__logo-image-2" src="../img/logo-sedona-desktop.svg" alt="логотип" width="188" height="96">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="../img/logo-sedona-tablet.svg">
+                <img class="main-navigation__logo-image" src="../img/logo-sedona-mobile.svg" alt="логотип" width="102" height="83">
+              </picture>
             </a>
             <button class="main-navigation__button-burger"></button>
             <button class="main-navigation__button-close"></button>
@@ -41,7 +44,7 @@
       <main class="review-page">
         <div class="intro intro--form">
           <div class="intro__logo">
-            <!--Фоновая картинка intro v2 ========================-->
+            <!--Фоновая картинка intro ========================-->
           </div>
 
           <div class="intro-description">

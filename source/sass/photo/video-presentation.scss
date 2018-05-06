@@ -45,6 +45,9 @@
   width: 320px;
 
   background-color: $section-v2_bg-color;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .video-presentation__video-control {
@@ -132,6 +135,16 @@
   }
 }
 
+@media (min-resolution: $retina2x-dpi),
+  (min-resolution: $retina2x-dppx) {
+  .video-presentation__video-player {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
 @media (min-width: $tablet-up) {
   .video-presentation {
     padding-right: 60px;
@@ -153,6 +166,10 @@
   .video-presentation__video-player {
     height: 502px;
     width: 648px;
+
+    background-image: url("../img/video-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .video-presentation__video-control {
@@ -207,6 +224,15 @@
   }
 }
 
+@media (min-width: $tablet-up) and (min-resolution: $retina2x-dpi),
+  (min-width: $tablet-up) and (min-resolution: $retina2x-dppx) {
+  .video-presentation__video-player {
+    background-image: url("../img/video-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 
 @media (min-width: $desktop-up) {
   .video-presentation {
@@ -217,6 +243,10 @@
 
   .video-presentation__video-player {
     width: 800px;
+
+    background-image: url("../img/video-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .video-presentation__video-control {
@@ -237,5 +267,14 @@
     position: absolute;
     top: 6px;
     left: 111px;
+  }
+}
+
+@media (min-width: $desktop-up) and (min-resolution: $retina2x-dpi),
+  (min-width: $desktop-up) and (min-resolution: $retina2x-dppx) {
+  .video-presentation__video-player {
+    background-image: url("../img/video-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

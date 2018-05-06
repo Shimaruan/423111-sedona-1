@@ -19,14 +19,91 @@ iframe {
   width: 100%;
 }
 
+@media (min-resolution: $retina2x-dpi),
+  (min-resolution: $retina2x-dppx) {
+  .interactive-map {
+    background-image:
+      url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-mobile@2x.jpg");
+
+    background-repeat:
+      no-repeat,
+      no-repeat;
+
+    background-position:
+      center,
+      center;
+  }
+}
+
+
 @media (min-width: $tablet-up) {
   .interactive-map {
     width: 768px;
+
+    background-image:
+      url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-tablet@1x.jpg");
+
+    background-repeat:
+      no-repeat,
+      no-repeat;
+
+    background-position:
+      center,
+      center;
   }
 }
+
+@media (min-resolution: $retina2x-dpi),
+  (min-resolution: $retina2x-dppx) {
+  .interactive-map {
+    background-image:
+      url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-tablet@2x.jpg");
+
+    background-repeat:
+      no-repeat,
+      no-repeat;
+
+    background-position:
+      center,
+      center;
+  }
+}
+
 
 @media (min-width: $desktop-up) {
   .interactive-map {
     width: 1200px;
+
+    background-image:
+      url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-desktop@1x.jpg");
+
+    background-repeat:
+      no-repeat,
+      no-repeat;
+
+    background-position:
+      center,
+      center;
+  }
+}
+
+@media (min-resolution: $retina2x-dpi),
+  (min-resolution: $retina2x-dppx) {
+  .interactive-map {
+    background-image:
+      url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-desktop@2x.jpg");
+
+    background-repeat:
+      no-repeat,
+      no-repeat;
+
+    background-position:
+      center,
+      center;
   }
 }
