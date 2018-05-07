@@ -27,8 +27,11 @@
           </ul>
           <div class="main-navigation__logo">
             <a class="main-navigation__logo-link" href="index.html">
-              <img class="main-navigation__logo-image" src="../img/logo-sedona-mobile.svg" alt="логотип" width="102" height="83">
-              <img class="main-navigation__logo-image-2" src="../img/logo-sedona-desktop.svg" alt="логотип" width="188" height="96">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="main-navigation__logo-image" src="img/logo-sedona-mobile.svg" alt="логотип" width="102" height="83">
+              </picture>
             </a>
             <button class="main-navigation__button-burger"></button>
             <button class="main-navigation__button-close"></button>
@@ -40,7 +43,7 @@
       <main class="photo-page">
         <section class="intro  intro--photo">
           <div class="intro__logo intro__logo--version-2">
-            <!--Фоновая картинка intro v2 ========================-->
+            <!--Фоновая картинка intro ========================-->
           </div>
 
           <div class="intro-description">
@@ -53,7 +56,11 @@
         <ol class="gallery-list">
           <li class="gallery-list__item gallery-list__item-1">
             <a class="gallery-list__item-picture gallery-list__item-picture-1" href="#">
-              <img class="gallery-list__item-image" src="../img/photo-sunset-mobile@1x.jpg" width="100%" height="100%" alt="убегающая в закат дорога">  <!--позднее добавить размер если будет необходимо -->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="gallery-list__item-image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="убегающая в закат дорога">
+              </picture>
             </a>
 
             <div class="gallery-list__item-description">
@@ -64,9 +71,14 @@
             </div>
           </li>
 
+
           <li class="gallery-list__item gallery-list__item-2">
             <a class="gallery-list__item-picture" href="#">
-              <img class="gallery-list__item-image" src="../img/photo-cactus-mobile@1x.jpg" width="100%" height="100%" alt="божественный кактус">  <!--позднее добавить размер если будет необходимо -->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="gallery-list__item-image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="божественный кактус">
+              </picture>
             </a>
 
             <div class="gallery-list__item-description">
@@ -76,9 +88,14 @@
             </div>
           </li>
 
+
           <li class="gallery-list__item gallery-list__item-3">
             <a class="gallery-list__item-picture" href="#">
-              <img class="gallery-list__item-image" src="../img/photo-roads-mobile@1x.jpg" width="100%" height="100%" alt="утопающие в лесах изгибы горной дороги">  <!--позднее добавить размер если будет необходимо -->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="gallery-list__item-image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="утопающие в лесах изгибы горной дороги">
+              </picture>
             </a>
 
             <div class="gallery-list__item-description">
@@ -88,9 +105,14 @@
             </div>
           </li>
 
+
           <li class="gallery-list__item gallery-list__item-4">
             <a class="gallery-list__item-picture" href="#">
-              <img class="gallery-list__item-image" src="../img/photo-bridge-mobile@1x.jpg" width="100%" height="100%" alt="мост из камня сотворенный природой">  <!--позднее добавить размер если будет необходимо -->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="gallery-list__item-image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="мост из камня сотворенный природой">
+              </picture>
             </a>
 
             <div class="gallery-list__item-description">
@@ -109,7 +131,7 @@
           </div>
 
           <div class="video-presentation__video">
-            <video class="video-presentation__video-player" width="100%" height="100%" poster="../img/video-mobile@1x.jpg"></video>
+            <video class="video-presentation__video-player"></video>
             <div class="video-presentation__video-control">
               <div class="video-presentation__video-replay">
                 <svg class="video-presentation__video-control-icon" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -185,6 +207,6 @@
         </p>
       </footer>
     </div>
-    <script src= "../js/script.js"></script>
+    <script src= "js/script.js"></script>
   </body>
 </html>

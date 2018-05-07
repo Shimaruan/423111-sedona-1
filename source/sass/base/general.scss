@@ -1,7 +1,17 @@
+html {
+  background-color: #f2f2f2;
+}
+
 .body {
   margin: 0;
 
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
