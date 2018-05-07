@@ -15,13 +15,11 @@
 
 .main-navigation__list-opened {
   display: flex;
-}
 
-.main-navigation__list-open {
-  display: flex;
-
+/* возможная анимация
   animation-name: slideInUp;
   animation-duration: 0.5s;
+*/
 }
 
 .main-navigation__list-link {
@@ -62,7 +60,7 @@
   left: 50%;
 
   display: block;
-  margin-left: -50px;
+  margin-left: -51px;
   width: 102px;
   height: 83px;
 }
@@ -128,7 +126,7 @@
   display: block;
 }
 
-/* Анимация------------------------------------------------- */
+/* возможная анимация -------------------------------------------------
 
 @keyframes slideInUp {
   from {
@@ -141,6 +139,7 @@
   }
 }
 
+*/
 
 @media (max-width: 767px) {
   .main-navigation__list-item:first-child .main-navigation__list-link {
