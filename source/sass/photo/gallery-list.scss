@@ -179,6 +179,24 @@
     padding-bottom: 15px;
   }
 
+  .gallery-list__item-header {
+    color: #ffffff;
+  }
+
+  .gallery-list__item-paragraph {
+    color: #ffffff;
+  }
+
+  .gallery-list__item-rating {
+    width: 4.2%;
+
+    color: #ffffff;
+  }
+
+  .gallery-list__item-rating::before {
+    background-image: url("../img/icon-like-white.svg");
+  }
+
   .gallery-list__item-picture {
     width: 400px;
     margin-bottom: 0;
@@ -186,9 +204,5 @@
 
   .gallery-list__item-picture-1 {
     width: 1200px;
-  }
-
-  .gallery-list__item-rating {
-    width: 4.2%;
   }
 }

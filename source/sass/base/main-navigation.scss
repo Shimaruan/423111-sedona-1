@@ -15,11 +15,6 @@
 
 .main-navigation__list-opened {
   display: flex;
-
-  /* возможная анимация
-  animation-name: slideInUp;
-  animation-duration: 0.5s;
-  */
 }
 
 .main-navigation__list-link {
@@ -64,6 +59,7 @@
   width: 102px;
   height: 83px;
 }
+
 
 .main-navigation__button-burger {
   @include idents-reset();
@@ -126,20 +122,6 @@
   display: block;
 }
 
-/* возможная анимация -------------------------------------------------
-
-@keyframes slideInUp {
-  from {
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-*/
 
 @media (max-width: 767px) {
   .main-navigation__list-item:first-child .main-navigation__list-link {

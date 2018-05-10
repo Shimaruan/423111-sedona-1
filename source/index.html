@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel= "stylesheet" href= "css/style.css">
+    <link rel= "stylesheet" href= "css/style-min.css">
+    <script src="js/picturefill.js" async></script>
   </head>
 
 
@@ -27,7 +28,7 @@
             </li>
           </ul>
           <div class="main-navigation__logo">
-            <a class="main-navigation__logo-link" href="#">
+            <a class="main-navigation__logo-link">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -62,6 +63,10 @@
             </div>
             <div class="section-list__item-picture">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp, img/main-city-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp, img/main-city-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/main-city-mobile@1x.webp, img/main-city-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
                 <img class="section-list__item-image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="великолепный город Седона">
@@ -92,6 +97,10 @@
 
             <div class="section-list__item-picture section-list__item-picture-2">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp, img/main-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp, img/main-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp, img/main-bridge-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
                 <img class="section-list__item-image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="завораживающий мост дьявола">
@@ -127,7 +136,7 @@
         <article class="interactive-map">
           <h2 class="visually-hidden">Интерактивная карта</h2>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d39093.18013256932!2d-111.66956576060336!3d35.170437192662426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1525469226832" width="320" height="350" frameborder="0" style="border:0" allowfullscreen>
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d39093.18013256932!2d-111.66956576060336!3d35.170437192662426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1525469226832" width="320" height="350" allowfullscreen>
           </iframe>
         </article>
       </main>

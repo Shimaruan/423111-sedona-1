@@ -75,7 +75,8 @@
 }
 
 .radiobutton-fieldset__input:focus + .radiobutton-fieldset__label span {
-  outline: 2px solid #81b3d2;
+  outline: none;
+  box-shadow: 0 0 10px 3px #dc6243;
 }
 
 

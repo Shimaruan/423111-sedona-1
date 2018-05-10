@@ -35,6 +35,11 @@
   background-color: $form-field_bg-color;
 
   resize: vertical;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 10px 3px #dc6243 inset;
+  }
 }
 
 .text-area-fieldset__field::placeholder {

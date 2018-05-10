@@ -29,6 +29,11 @@
   &:disabled {
     background-color: #e5e5e5;
   }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 10px 3px #dc6243;
+  }
 }
 
 .button-disabled {

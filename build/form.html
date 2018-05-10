@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel= "stylesheet" href= "css/style.css">
+    <script src="js/picturefill.js" async></script>
+  </head>
+
+
+  <body class="body body-form-page">
+    <div class="wrapper">
+      <header class="page-header">
+        <nav class="main-navigation">
+          <ul class="main-navigation__list main-navigation__list-opened">
+            <li class="main-navigation__list-item">
+              <a class="main-navigation__list-link" href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__list-item main-navigation__list-item--spacing-right">
+              <a class="main-navigation__list-link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a class="main-navigation__list-link main-navigation__list-link--current">Форма отзыва</a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a class="main-navigation__list-link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+          <div class="main-navigation__logo">
+            <a class="main-navigation__logo-link" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="main-navigation__logo-image" src="img/logo-sedona-mobile.svg" alt="логотип" width="102" height="83">
+              </picture>
+            </a>
+            <button class="main-navigation__button-burger"></button>
+            <button class="main-navigation__button-close"></button>
+        </div>
+        </nav>
+      </header>
+
+
+      <main class="review-page">
+        <div class="intro intro--form">
+          <div class="intro__logo">
+            <!--Фоновая картинка intro ========================-->
+          </div>
+
+          <div class="intro-description">
+            <h1 class="intro-description__header">Оставьте свой отзыв</h1>
+            <p class="intro-description__paragraph">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </div>
+
+
+        <form class="review-form" method="post" action="http://echo.htmlacademy.ru">
+          <div class="text-fieldset review-form-fieldset">
+            <h2 class="text-fieldset__legend review-form-fieldset__legend">Представьтесь:</h2>
+
+            <label class="text-fieldset__label" for="person-form__name-id">Имя*:</label>
+            <input class="text-fieldset__input" type="text" id="person-form__name-id" name="review-form__name" placeholder="Петр" required>
+
+            <label class="text-fieldset__label" for="person-form__second-name-id">Фамилия*:</label>
+            <input class="text-fieldset__input" type="text" id="person-form__second-name-id" name="review-form__second-name" placeholder="Иванов" required>
+
+            <label class="text-fieldset__label" for="person-form__third-name-id">Отчество*:</label>
+            <input class="text-fieldset__input" type="text" id="person-form__third-name-id" name="review-form__third-name" placeholder="Александрович" required>
+          </div>
+
+          <div class="char-fieldset review-form-fieldset">
+            <h2 class="char-fieldset__legend review-form-fieldset__legend">Контактная информация:</h2>
+
+            <div class="char-fieldset__wrapper char-fieldset__wrapper-phone">
+              <label class="char-fieldset__label char-fieldset__label-phone" for="contacts-form-telephone__id"><span class="char-fieldset__hidden-text">Контактный</span> телефон*:</label>
+              <input class="char-fieldset__input char-fieldset__input-phone" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10,10}$" id="contacts-form-telephone__id" name="review-form__telephone" placeholder="Введите телефон" required>
+            </div>
+
+            <div class="char-fieldset__wrapper char-fieldset__wrapper-email">
+              <label class="char-fieldset__label char-fieldset__label-email" for="contacts-form-email__id">Электронная почта*:</label>
+              <input class="char-fieldset__input char-fieldset__input-email" type="email" id="contacts-form-email__id" name="review-form__email" placeholder="Введите e-mail" required>
+            </div>
+          </div>
+
+          <div class="radiobutton-fieldset review-form-fieldset">
+            <h2 class="radiobutton-fieldset__legend review-form-fieldset__legend">Ваше общее впечатление:</h2>
+
+            <input class="radiobutton-fieldset__input visually-hidden"  type="radio" id="impression-form-good__id" name="review-form__impression" value="good" tabindex="0" checked>
+            <label class="radiobutton-fieldset__label" for="impression-form-good__id"><span></span>Скорее положительное</label>
+
+            <input class="radiobutton-fieldset__input visually-hidden" type="radio" id="impression-form-bad__id" name="review-form__impression" value="bad" tabindex="0">
+            <label class="radiobutton-fieldset__label" for="impression-form-bad__id"><span></span>Скорее отрицательное</label>
+
+            <input class="radiobutton-fieldset__input visually-hidden" type="radio" id="impression-form-abstain__id" name="review-form__impression" value="abstain" tabindex="0">
+            <label class="radiobutton-fieldset__label" for="impression-form-abstain__id"><span></span>Затрудняюсь ответить</label>
+
+          </div>
+
+          <div class="checkbox-fieldset review-form-fieldset">
+            <h2 class="checkbox-fieldset__legend review-form-fieldset__legend">Посещенные <br> достопримечательности:</h2>
+
+            <div class="checkbox-fieldset__wrapper checkbox-fieldset__wrapper-1">
+              <input class="checkbox-fieldset__input visually-hidden" type="checkbox" id="devil-bridge__id" name="review-form__places" value="devil-bridge" tabindex="0" checked>
+              <label class="checkbox-fieldset__label" for="devil-bridge__id"><span></span>Мост Дьявола</label>
+              <input class="checkbox-fieldset__input visually-hidden" type="checkbox" id="bell-mountain__id" name="review-form__places" value="bell-mountain" tabindex="0" checked>
+              <label class="checkbox-fieldset__label" for="bell-mountain__id"><span></span>Гора-Колокол</label>
+            </div>
+
+            <div class="checkbox-fieldset__wrapper checkbox-fieldset__wrapper-2">
+              <input class="checkbox-fieldset__input visually-hidden" type="checkbox" id="slide-park__id" name="review-form__places" value="slide-park" tabindex="0" checked>
+              <label class="checkbox-fieldset__label" for="slide-park__id"><span></span>Слайд-парк</label>
+
+              <input class="checkbox-fieldset__input visually-hidden" type="checkbox" id="red-mountain__id" name="review-form__places" value="red-mountain" tabindex="0">
+              <label class="checkbox-fieldset__label" for="red-mountain__id"><span></span>Красные скалы</label>
+            </div>
+          </div>
+
+          <div class="text-area-fieldset review-form-fieldset">
+            <h2 class="text-area-fieldset__legend review-form-fieldset__legend">Опишите свои эмоции:</h2>
+
+            <textarea class="text-area-fieldset__field" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+
+          <input class="review-form__button button" type="submit" value="Отправить отзыв">
+          <p class="footnote">* &ndash; Обязательные поля</p>
+        </form>
+      </main>
+
+      <footer class="page-footer">
+        <p class="page-footer__hashtag">#VISITSEDONA</p>
+
+        <ul class="footer-social">
+          <li class="footer-social__item">
+            <a class="footer-social__button" href="#">
+              <svg class="footer-social__button-icon" width="17.5px" height="14.663px">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                  </g>
+                </g>
+              </svg>
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__button facebook-button" href="#">
+              <svg class="footer-social__button-icon" width="8.672px" height="18.944px">
+                <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+              </svg>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__button youtube-button" href="#">
+              <svg class="footer-social__button-icon" width="19.979px" height="14.015px">
+                <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+              </svg>
+              <span class="visually-hidden">Ютуб</span>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer-copyright">
+          <span class="footer-copyright__span">Разработано</span>
+          <a class="footer-copyright__author-logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="footer-copyright__author-icon" width="26.943px" height="34.09px"
+            viewBox="0 0 26.943 34.09">
+              <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+            </svg>
+            <span class="visually-hidden">Перейти на сайт автора - HTML Academy</span>
+          </a>
+        </p>
+      </footer>
+    </div>
+    <script src= "js/script.js"></script>
+  </body>
+</html>

@@ -2,16 +2,33 @@ html {
   background-color: #f2f2f2;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+
+  &:focus {
+    outline-color: #dc6243;
+  }
+}
+
 .body {
   margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1280px;
 
   background-color: #ffffff;
   box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.2);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.index-page,
+.photo-page,
+.review-page {
+  width: 100%;
 }
 
 .visually-hidden:not(:focus):not(:active),
