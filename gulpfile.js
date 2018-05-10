@@ -89,8 +89,10 @@ gulp.task("copy", function () {
 
 gulp.task("build", function (done) {
   run(
-    "style",
     "clean",
+    "style",
+    "imagemin",
+    "webp",
     "copy",
     "picturefill",
     done
