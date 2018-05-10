@@ -32,13 +32,13 @@ gulp.task("imagemin", function() {
     .pipe(imagemin({
       progressive: true
     }))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 });
 
 gulp.task("webp", function() {
     gulp.src("source/img/**/*.{jpg,png,gif}")
         .pipe(webp())
-        .pipe(gulp.dest("source/img"))
+        .pipe(gulp.dest("build/img"))
 });
 
 gulp.task("picturefill-make", function() {
