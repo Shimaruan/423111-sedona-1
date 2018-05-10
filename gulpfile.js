@@ -20,11 +20,11 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
-    .pipe(server.stream())
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style-min.css"))
-    .pipe(gulp.dest("source/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream())
 });
 
 gulp.task("imagemin", function() {
