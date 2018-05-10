@@ -41,6 +41,30 @@ gulp.task("webp", function() {
         .pipe(gulp.dest("source/img"))
 });
 
+gulp.task("picturefill-make", function() {
+  return  gulp.src("node_modules/picturefill/dist/picturefill.min.js")
+    .pipe(gulp.dest("build/js"));
+});
+
+gulp.task("picturefill-name", function() {
+  return  gulp.src("build/js/picturefill.min.js")
+    .pipe(rename("picturefill-min.js"))
+    .pipe(gulp.dest("build/js/"));
+});
+
+gulp.task("picturefill-delete", function () {
+  return del("build/js/picturefill.min.js");
+});
+
+gulp.task("picturefill", function (done) {
+  run(
+    "picturefill-make",
+    "picturefill-name",
+    "picturefill-delete",
+    done
+  );
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
@@ -63,6 +87,7 @@ gulp.task("build", function (done) {
     "style",
     "clean",
     "copy",
+    "picturefill",
     done
   );
 });

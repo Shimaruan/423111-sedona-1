@@ -16,6 +16,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "4.0.x",
     "gulp-webp": "^3.0.0",
+    "picturefill": "^3.0.2",
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -29,7 +30,8 @@
     "imagemin": "gulp imagemin",
     "webp": "gulp webp",
     "copy": "gulp copy",
-    "clean": "gulp clean"
+    "clean": "gulp clean",
+    "picturefill": "gulp picturefill"
   },
   "browserslist": [
     "last 2 versions",
