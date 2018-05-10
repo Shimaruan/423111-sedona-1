@@ -48,28 +48,10 @@ gulp.task("webp", function() {
         .pipe(gulp.dest("build/img"))
 });
 
-gulp.task("picturefill-make", function() {
+gulp.task("picturefill", function() {
   return  gulp.src("node_modules/picturefill/dist/picturefill.min.js")
-    .pipe(gulp.dest("build/js"));
-});
-
-gulp.task("picturefill-name", function() {
-  return  gulp.src("build/js/picturefill.min.js")
     .pipe(rename("picturefill-min.js"))
-    .pipe(gulp.dest("build/js/"));
-});
-
-gulp.task("picturefill-delete", function () {
-  return del("build/js/picturefill.min.js");
-});
-
-gulp.task("picturefill", function (done) {
-  run(
-    "picturefill-make",
-    "picturefill-name",
-    "picturefill-delete",
-    done
-  );
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("clean", function () {
