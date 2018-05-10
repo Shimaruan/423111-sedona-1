@@ -48,8 +48,5 @@
   ],
   "engines": {
     "node": "8.11"
-  },
-  "dependencies": {
-    "svgo": "^1.0.5"
   }
 }
