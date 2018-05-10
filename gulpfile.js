@@ -15,6 +15,7 @@ var run = require("run-sequence");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
+var svgstore = require("gulp-svgstore");
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
@@ -40,7 +41,10 @@ gulp.task("style", function() {
 });
 
 gulp.task("imagemin", function() {
-  gulp.src("source/img/**/*.{jpg,png,svg,gif}")
+  gulp.src([
+    "source/img/**/*.{png,jpg,svg,gif}",
+    "!source/img/icon-*.svg"
+  ])
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
       imagemin.jpegtran({progressive: true}),
@@ -58,6 +62,22 @@ gulp.task("webp", function() {
     gulp.src("source/img/**/*.{jpg,png,gif}")
         .pipe(webp())
         .pipe(gulp.dest("build/img"))
+});
+
+gulp.task("icons", function() {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(imagemin(
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: false}
+        ]
+      })
+    ))
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("icons.svg"))
+    .pipe(gulp.dest("tmp"));
 });
 
 gulp.task("picturefill", function() {
@@ -83,6 +103,7 @@ gulp.task("copy", function () {
 gulp.task("build", function (done) {
   run(
     "clean",
+    "icons",
     "html",
     "style",
     "imagemin",
