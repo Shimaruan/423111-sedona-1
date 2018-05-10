@@ -29,9 +29,16 @@ gulp.task("style", function() {
 
 gulp.task("imagemin", function() {
   gulp.src("source/img/**/*.{jpg,png,svg,gif}")
-    .pipe(imagemin({
-      progressive: true
-    }))
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: false}
+        ]
+      })
+    ]))
     .pipe(gulp.dest("build/img"))
 });
 
