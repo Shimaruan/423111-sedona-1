@@ -3,10 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 128px;
+  width: 140px;
 }
 
 .footer-copyright__span {
+  margin-left: 5px;
   width: 100px;
 
   @include paragraph-standart_typograph();
@@ -15,13 +16,12 @@
 
 .footer-copyright__author-logo {
   display: block;
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
 }
 
 .footer-copyright__author-icon {
   fill: #000000;
-
 
   &:hover {
     fill: #81b3d2;
@@ -36,6 +36,6 @@
   .footer-copyright {
     justify-content: flex-end;
     padding-bottom: 37px;
-    width: 135px;
+    width: 141px;
   }
 }

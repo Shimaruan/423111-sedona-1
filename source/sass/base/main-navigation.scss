@@ -74,19 +74,19 @@
   border: none;
   background: none;
   outline: none;
-  background-image: url("../img/icon-menu.svg");
+  background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='22.928' height='21.982' fill='%2381b3d2'%3E%3Cpath d='M0 0h22.928v3.964H0zM0 9.009h22.928v3.964H0zM0 18.018h22.928v3.964H0z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
 
 
   &:hover {
-    background-image: url("../img/icon-menu.svg");
+    background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='22.928' height='21.982' fill='%2381b3d2'%3E%3Cpath d='M0 0h22.928v3.964H0zM0 9.009h22.928v3.964H0zM0 18.018h22.928v3.964H0z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &:active {
-    background-image: url("../img/icon-menu.svg");
+    background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='22.928' height='21.982' fill='%2381b3d2'%3E%3Cpath d='M0 0h22.928v3.964H0zM0 9.009h22.928v3.964H0zM0 18.018h22.928v3.964H0z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -104,17 +104,17 @@
 
   border: none;
   background: none;
-  background-image: url("../img/icon-cross.svg");
+  background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='22.199' height='22.199' fill='%23fff'%3E%3Cpath d='M22.199 2.804L19.396 0 11.1 8.297 2.804 0 0 2.803 8.297 11.1 0 19.396l2.803 2.803 8.297-8.297 8.296 8.297 2.803-2.803-8.296-8.296z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
 
 
   &:hover {
-    background-image: url("../img/icon-cross.svg");
+    background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='22.199' height='22.199' fill='%23fff'%3E%3Cpath d='M22.199 2.804L19.396 0 11.1 8.297 2.804 0 0 2.803 8.297 11.1 0 19.396l2.803 2.803 8.297-8.297 8.296 8.297 2.803-2.803-8.296-8.296z'/%3E%3C/svg%3E");
   }
 
   &:active {
-    background-image: url("../img/icon-cross.svg");
+    background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='22.199' height='22.199' fill='%23fff'%3E%3Cpath d='M22.199 2.804L19.396 0 11.1 8.297 2.804 0 0 2.803 8.297 11.1 0 19.396l2.803 2.803 8.297-8.297 8.296 8.297 2.803-2.803-8.296-8.296z'/%3E%3C/svg%3E");
   }
 }
 
