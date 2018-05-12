@@ -28,6 +28,8 @@
 }
 
 .checkbox-fieldset__label {
+  position: relative;
+
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -38,8 +40,9 @@
   text-transform: initial;
 }
 
-.checkbox-fieldset__input + .checkbox-fieldset__label span {
+.checkbox-fieldset__input + .checkbox-fieldset__label::before {
   display: block;
+  content: " ";
   margin-right: 23px;
   min-width: 56px;
   min-height: 56px;
@@ -57,30 +60,48 @@
   }
 }
 
-.checkbox-fieldset__input:checked + .checkbox-fieldset__label span {
+.checkbox-fieldset__input:checked + .checkbox-fieldset__label::before {
   display: block;
+  content: " ";
   margin-right: 23px;
   min-width: 56px;
   min-height: 56px;
 
   border-radius: 10%;
+  background-color: $form-field_bg-color;
+
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
+}
+
+.checkbox-fieldset__input:checked + .checkbox-fieldset__label::after {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+
+  display: block;
+  content: " ";
+  min-width: 25px;
+  min-height: 20px;
+
   background-color: $form-field_bg-color;
   background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='23.049' fill='%23333' height='16.249'%3E%3Cpath d='M22.801 1.299L21.75.248a.853.853 0 0 0-1.203 0L8.693 12.102 2.502 5.911a.853.853 0 0 0-1.203 0L.248 6.962a.852.852 0 0 0 0 1.202l7.837 7.837a.845.845 0 0 0 .608.246c.22.002.44-.079.608-.246l13.5-13.5a.852.852 0 0 0 0-1.202z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
 
 
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
   &:active {
-    background-color: #d5d5d5;
-    background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='23.049' height='16.249' fill='rgba%2851, 51, 51, 0.3%29'%3E%3Cpath d='M22.801 1.299L21.75.248a.853.853 0 0 0-1.203 0L8.693 12.102 2.502 5.911a.853.853 0 0 0-1.203 0L.248 6.962a.852.852 0 0 0 0 1.202l7.837 7.837a.845.845 0 0 0 .608.246c.22.002.44-.079.608-.246l13.5-13.5a.852.852 0 0 0 0-1.202z'/%3E%3C/svg%3E");
+    opacity: 0.3;
   }
 }
 
-.checkbox-fieldset__input:focus + .checkbox-fieldset__label span {
+.checkbox-fieldset__input:focus + .checkbox-fieldset__label::before {
   outline: none;
   box-shadow: 0 0 10px 3px #dc6243;
 }

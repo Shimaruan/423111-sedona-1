@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var htmlmin = require("gulp-htmlmin");
 var svgstore = require("gulp-svgstore");
+var uglify = require("gulp-uglify");
 
 gulp.task("html", function() {
   return gulp.src("source/*.html")
@@ -39,6 +40,13 @@ gulp.task("style", function() {
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream())
 });
+
+gulp.task("js-min", function() {
+  return  gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename({suffix: '-min'}))
+    .pipe(gulp.dest("build/js"));
+ });
 
 gulp.task("imagemin", function() {
   gulp.src([
@@ -106,6 +114,7 @@ gulp.task("build", function (done) {
     "icons",
     "html",
     "style",
+    "js-min",
     "imagemin",
     "webp",
     "copy",

@@ -18,6 +18,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "4.0.x",
     "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
     "gulp-webp": "^3.0.0",
     "picturefill": "^3.0.2",
     "posthtml-include": "^1.1.0",
@@ -35,7 +36,8 @@
     "webp": "gulp webp",
     "copy": "gulp copy",
     "clean": "gulp clean",
-    "picturefill": "gulp picturefill"
+    "picturefill": "gulp picturefill",
+    "js-min": "gulp js-min"
   },
   "browserslist": [
     "last 2 versions",
