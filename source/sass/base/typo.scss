@@ -1,4 +1,4 @@
-$main_font-family: "PT Sans", arial, sans-serif;
+$main_font-family: "PT Sans", "Arial", sans-serif;
 
 
 //text size
@@ -31,15 +31,17 @@ $button_txt-color: white;
 
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   src: url("../fonts/ptsans.woff2"), url("../fonts/ptsans.woff");
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
   src: url("../fonts/ptsansbold.woff2"), url("../fonts/ptsansbold.woff");
   font-weight: bold;
+  font-display: swap;
 }
 
 .body {
