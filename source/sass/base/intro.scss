@@ -226,6 +226,23 @@
 
   .intro--photo .intro__logo {
     height: 290px;
+
+    background-image:
+      url("../img/text-sedona.svg"),
+      url("../img/bg-intro-triangle-tablet.svg"),
+      url("../img/bg-back-tablet@1x.jpg");
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat;
+    background-size:
+      460px,
+      100%,
+      cover;
+    background-position:
+      center 95px,
+      bottom,
+      bottom;
   }
 
   .intro-description {
@@ -316,7 +333,7 @@
     background-image:
       url("../img/text-sedona.svg"),
       url("../img/bg-intro-triangle-tablet.svg"),
-      url("../img/bg-back-tablet@1x.jpg");
+      url("../img/bg-back-tablet@2x.jpg");
     background-repeat:
       no-repeat,
       no-repeat,
