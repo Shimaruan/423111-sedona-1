@@ -13,10 +13,12 @@ menuButtonOpen.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalMenu.classList.add("main-navigation__list-opened");
   menuButtonClose.classList.add("main-navigation__button-show");
+  menuButtonBurger.classList.remove("main-navigation__button-show");
 });
 
 menuButtonClose.addEventListener("click", function(evt) {
   evt.preventDefault();
+  menuButtonBurger.classList.add("main-navigation__button-show");
   menuButtonClose.classList.remove("main-navigation__button-show");
   modalMenu.classList.remove("main-navigation__list-opened");
 });
