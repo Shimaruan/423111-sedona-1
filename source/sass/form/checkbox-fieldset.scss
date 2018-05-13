@@ -59,6 +59,10 @@
   background-color: #e5e5e5;
 }
 
+.checkbox-fieldset__input:disabled + .checkbox-fieldset__label::before {
+  opacity: 0.2;
+}
+
 .checkbox-fieldset__input:checked + .checkbox-fieldset__label::before {
   display: block;
   content: " ";
@@ -94,6 +98,10 @@
 }
 
 .checkbox-fieldset__input:checked + .checkbox-fieldset__label:active::after {
+  opacity: 0.3;
+}
+
+.checkbox-fieldset__input:disabled + .checkbox-fieldset__label::after {
   opacity: 0.3;
 }
 

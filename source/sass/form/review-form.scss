@@ -31,13 +31,14 @@
   box-sizing: border-box;
   padding-top: 40px;
 
-  box-shadow: 0px 4px 19px 0px rgba(223,223,223,0.81);
+  box-shadow: 0px 7px 15px hsla(180, 100%, 0%, 0.15);
   background-color: $section-v1_bg-color;
 }
 
 .review-form_modal-failure {
-  bottom: 514px;
+  bottom: 464px;
 
+  padding-bottom: 50px;
   width: 100%;
 }
 
