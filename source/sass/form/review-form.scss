@@ -20,6 +20,77 @@
   display: none;
 }
 
+.review-form_modal {
+  position: fixed;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 40px;
+  width: 320px;
+
+  box-shadow: 0 7px 15px hsla(180, 100%, 0%, 0.15);
+  background-color: $section-v1_bg-color;
+}
+
+.review-form_modal-failure {
+  top: 0;
+  left: 50%;
+  margin-left: -160px;
+  z-index: 151;
+
+  padding-bottom: 50px;
+}
+
+.review-form_modal-success {
+  top: 380px;
+  left: 50%;
+  margin-left: -160px;
+  z-index: 150;
+}
+
+.review-form_modal-header {
+  @include idents-reset();
+  margin-bottom: 14px;
+  width: 100%;
+
+  @include standart-header_typograph();
+  text-align: center;
+}
+
+.review-form_modal-paragraph {
+  padding-bottom: 10px;
+  width: 70%;
+
+  @include paragraph-standart_typograph();
+  line-height: $big_line-height;
+  text-align: center;
+}
+
+.review-form_modal-button {
+  text-transform: uppercase;
+}
+
+.review-form_modal-failure .review-form_modal-button {
+  width: 56%;
+}
+
+.review-form_modal-success .review-form_modal-paragraph {
+  padding-bottom: 20px;
+}
+
+.review-form_modal-success .review-form_modal-wrapper {
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+
+  background-color: $section-v4_bg-color;
+}
+
 @media (min-width: $tablet-up) {
   .review-form {
     flex-direction: row;
@@ -43,7 +114,55 @@
     @include paragraph-standart_typograph();
     line-height: $biggest_line-height;
   }
+
+  .review-form_modal-failure {
+    left: 50%;
+    margin-left: -200px;
+
+    padding-top: 55px;
+    padding-bottom: 50px;
+    width: 400px;
+  }
+
+  .review-form_modal-success {
+    left: 50%;
+    margin-left: -320px;
+
+    padding-top: 60px;
+    width: 640px;
+  }
+
+  .review-form_modal-header {
+    font-size: 30px;
+  }
+
+  .review-form_modal-failure .review-form_modal-header {
+    margin-bottom: 10px;
+    width: 60%;
+
+    line-height: 40px;
+  }
+
+  .review-form_modal-failure .review-form_modal-paragraph {
+    width: 80%;
+
+    padding-bottom: 18px;
+  }
+
+  .review-form_modal-failure .review-form_modal-button {
+    margin-right: auto;
+    margin-left: auto;
+    width: 68%;
+  }
+
+  .review-form_modal-success .review-form_modal-wrapper {
+    padding-top: 45px;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-bottom: 45px;
+  }
 }
+
 
 @media (min-width: $desktop-up) {
   .review-form {
@@ -51,5 +170,9 @@
     padding-right: 120px;
     padding-left: 120px;
     padding-bottom: 46px;
+  }
+
+  .review-form_modal-success .review-form_modal-paragraph {
+    padding-bottom: 25px;
   }
 }

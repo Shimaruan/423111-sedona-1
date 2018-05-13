@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel= "stylesheet" href= "css/style-min.css">
     <script src="js/picturefill-min.js" async></script>
   </head>
@@ -90,13 +92,13 @@
             <h2 class="radiobutton-fieldset__legend review-form-fieldset__legend">Ваше общее впечатление:</h2>
 
             <input class="radiobutton-fieldset__input visually-hidden"  type="radio" id="impression-form-good__id" name="review-form__impression" value="good" tabindex="0" checked>
-            <label class="radiobutton-fieldset__label" for="impression-form-good__id"><span></span>Скорее положительное</label>
+            <label class="radiobutton-fieldset__label" for="impression-form-good__id">Скорее положительное</label>
 
             <input class="radiobutton-fieldset__input visually-hidden" type="radio" id="impression-form-bad__id" name="review-form__impression" value="bad" tabindex="0">
-            <label class="radiobutton-fieldset__label" for="impression-form-bad__id"><span></span>Скорее отрицательное</label>
+            <label class="radiobutton-fieldset__label" for="impression-form-bad__id">Скорее отрицательное</label>
 
             <input class="radiobutton-fieldset__input visually-hidden" type="radio" id="impression-form-abstain__id" name="review-form__impression" value="abstain" tabindex="0">
-            <label class="radiobutton-fieldset__label" for="impression-form-abstain__id"><span></span>Затрудняюсь ответить</label>
+            <label class="radiobutton-fieldset__label" for="impression-form-abstain__id">Затрудняюсь ответить</label>
 
           </div>
 
@@ -105,28 +107,46 @@
 
             <div class="checkbox-fieldset__wrapper checkbox-fieldset__wrapper-1">
               <input class="checkbox-fieldset__input visually-hidden" type="checkbox" id="devil-bridge__id" name="review-form__places" value="devil-bridge" tabindex="0" checked>
-              <label class="checkbox-fieldset__label" for="devil-bridge__id"><span></span>Мост Дьявола</label>
+              <label class="checkbox-fieldset__label" for="devil-bridge__id">Мост Дьявола</label>
               <input class="checkbox-fieldset__input visually-hidden" type="checkbox" id="bell-mountain__id" name="review-form__places" value="bell-mountain" tabindex="0" checked>
-              <label class="checkbox-fieldset__label" for="bell-mountain__id"><span></span>Гора-Колокол</label>
+              <label class="checkbox-fieldset__label" for="bell-mountain__id">Гора-Колокол</label>
             </div>
 
             <div class="checkbox-fieldset__wrapper checkbox-fieldset__wrapper-2">
               <input class="checkbox-fieldset__input visually-hidden" type="checkbox" id="slide-park__id" name="review-form__places" value="slide-park" tabindex="0" checked>
-              <label class="checkbox-fieldset__label" for="slide-park__id"><span></span>Слайд-парк</label>
+              <label class="checkbox-fieldset__label" for="slide-park__id">Слайд-парк</label>
 
               <input class="checkbox-fieldset__input visually-hidden" type="checkbox" id="red-mountain__id" name="review-form__places" value="red-mountain" tabindex="0">
-              <label class="checkbox-fieldset__label" for="red-mountain__id"><span></span>Красные скалы</label>
+              <label class="checkbox-fieldset__label" for="red-mountain__id">Красные скалы</label>
             </div>
           </div>
 
           <div class="text-area-fieldset review-form-fieldset">
-            <h2 class="text-area-fieldset__legend review-form-fieldset__legend">Опишите свои эмоции:</h2>
+            <label class="text-area-fieldset__legend review-form-fieldset__legend" for="text-area-fieldset__field-id">Опишите свои эмоции:</label>
 
-            <textarea class="text-area-fieldset__field" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="text-area-fieldset__field" id="text-area-fieldset__field-id" cols="40" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
 
           <input class="review-form__button button" type="submit" value="Отправить отзыв">
           <p class="footnote">* &ndash; Обязательные поля</p>
+
+
+          <div class="review-form_modal review-form_modal-failure">
+            <h2 class="review-form_modal-header">Что-то пошло не так!</h2>
+            <p class="review-form_modal-paragraph">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="review-form_modal-button button"  type="button">Ok</button>
+          </div>
+
+          <div class="review-form_modal review-form_modal-success">
+            <h2 class="review-form_modal-header">Ваш отзыв отправлен!</h2>
+            <p class="review-form_modal-paragraph">
+              Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+              В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="review-form_modal-wrapper">
+            <button class="review-form_modal-button button"  type="button">Закрыть окно</button>
+          </div>
+          </div>
         </form>
       </main>
 
@@ -163,7 +183,7 @@
         <p class="footer-copyright">
           <span class="footer-copyright__span">Разработано</span>
           <a class="footer-copyright__author-logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="footer-copyright__author-icon" width="26.943" height="34.09">
+            <svg class="footer-copyright__author-icon" width="40" height="40">
               <use xlink:href="#icon-htmlacademy"/>
             </svg>
             <span class="visually-hidden">Перейти на сайт автора - HTML Academy</span>
@@ -171,6 +191,6 @@
         </p>
       </footer>
     </div>
-    <script src= "js/script.js"></script>
+    <script src= "js/script-min.js"></script>
   </body>
 </html>

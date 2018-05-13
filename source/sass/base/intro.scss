@@ -21,30 +21,9 @@
     center;
 }
 
-.intro--form .intro__logo {
-  height: 158px;
-
-  background-image:
-    url("../img/text-sedona.svg"),
-    url("../img/bg-intro-triangle-mobile.svg"),
-    url("../img/bg-back-mobile@1x.jpg");
-  background-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat;
-  background-size:
-    230px,
-    104%,
-    240%;
-  background-position:
-    center 50px,
-    bottom,
-    bottom;
-}
-
+.intro--form .intro__logo,
 .intro--photo .intro__logo {
   height: 158px;
-
   background-image:
     url("../img/text-sedona.svg"),
     url("../img/bg-intro-triangle-mobile.svg"),
@@ -141,25 +120,7 @@
       center;
   }
 
-  .intro--form .intro__logo {
-    background-image:
-      url("../img/text-sedona.svg"),
-      url("../img/bg-intro-triangle-mobile.svg"),
-      url("../img/bg-back-mobile@2x.jpg");
-    background-repeat:
-      no-repeat,
-      no-repeat,
-      no-repeat;
-    background-size:
-      230px,
-      104%,
-      240%;
-    background-position:
-      center 50px,
-      bottom,
-      bottom;
-  }
-
+  .intro--form .intro__logo,
   .intro--photo .intro__logo {
     background-image:
       url("../img/text-sedona.svg"),
@@ -203,7 +164,8 @@
       center;
   }
 
-  .intro--form .intro__logo {
+  .intro--form .intro__logo,
+  .intro--photo .intro__logo {
     height: 290px;
 
     background-image:
@@ -222,10 +184,6 @@
       center 95px,
       bottom,
       bottom;
-  }
-
-  .intro--photo .intro__logo {
-    height: 290px;
   }
 
   .intro-description {
@@ -293,30 +251,12 @@
       center;
   }
 
-  .intro--form .intro__logo {
-    background-image:
-      url("../img/text-sedona.svg"),
-      url("../img/bg-intro-triangle-tablet.svg"),
-      url("../img/bg-back-tablet@2x.jpg");
-    background-repeat:
-      no-repeat,
-      no-repeat,
-      no-repeat;
-    background-size:
-      460px,
-      100%,
-      cover;
-    background-position:
-      center 95px,
-      bottom,
-      bottom;
-  }
-
+  .intro--form .intro__logo,
   .intro--photo .intro__logo {
     background-image:
       url("../img/text-sedona.svg"),
       url("../img/bg-intro-triangle-tablet.svg"),
-      url("../img/bg-back-tablet@1x.jpg");
+      url("../img/bg-back-tablet@2x.jpg");
     background-repeat:
       no-repeat,
       no-repeat,
@@ -353,27 +293,7 @@
       center;
   }
 
-  .intro--form .intro__logo {
-    height: 301px;
-
-    background-image:
-      url("../img/text-sedona.svg"),
-      url("../img/bg-intro-triangle-desktop.svg"),
-      url("../img/bg-back-desktop@1x.jpg");
-    background-repeat:
-      no-repeat,
-      no-repeat,
-      no-repeat;
-    background-size:
-      460px,
-      100%,
-      cover;
-    background-position:
-      center 100px,
-      bottom,
-      center -217px;
-  }
-
+  .intro--form .intro__logo,
   .intro--photo .intro__logo {
     height: 301px;
 
@@ -430,27 +350,7 @@
       center;
   }
 
-  .intro--form .intro__logo {
-    height: 301px;
-
-    background-image:
-      url("../img/text-sedona.svg"),
-      url("../img/bg-intro-triangle-desktop.svg"),
-      url("../img/bg-back-desktop@2x.jpg");
-    background-repeat:
-      no-repeat,
-      no-repeat,
-      no-repeat;
-    background-size:
-      460px,
-      100%,
-      cover;
-    background-position:
-      center 100px,
-      bottom,
-      center -217px;
-  }
-
+  .intro--form .intro__logo,
   .intro--photo .intro__logo {
     height: 301px;
 

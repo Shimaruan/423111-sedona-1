@@ -30,6 +30,7 @@
 
   @include standart-header_typograph();
   font-family: inherit;
+  overflow: auto;
 
   border: none;
   background-color: $form-field_bg-color;

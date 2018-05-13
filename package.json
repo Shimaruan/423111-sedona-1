@@ -18,6 +18,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "4.0.x",
     "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
     "gulp-webp": "^3.0.0",
     "picturefill": "^3.0.2",
     "posthtml-include": "^1.1.0",
@@ -35,12 +36,16 @@
     "webp": "gulp webp",
     "copy": "gulp copy",
     "clean": "gulp clean",
-    "picturefill": "gulp picturefill"
+    "picturefill": "gulp picturefill",
+    "js-min": "gulp js-min"
   },
   "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
+    "last 1 chrome versions",
+    "last 1 firefox versions",
+    "last 1 opera versions",
+    "last 1 safari versions",
+    "last 1 edge versions",
+    "last 1 ie versions"
   ],
   "editorconfig-cli": [
     "*.json",
