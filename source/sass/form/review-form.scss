@@ -1,6 +1,4 @@
 .review-form {
-  position: relative;
-
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -23,29 +21,33 @@
 }
 
 .review-form_modal {
-  position: absolute;
+  position: fixed;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   padding-top: 40px;
+  width: 320px;
 
-  box-shadow: 0px 7px 15px hsla(180, 100%, 0%, 0.15);
+  box-shadow: 0 7px 15px hsla(180, 100%, 0%, 0.15);
   background-color: $section-v1_bg-color;
 }
 
 .review-form_modal-failure {
-  bottom: 464px;
+  top: 0;
+  left: 50%;
+  margin-left: -160px;
+  z-index: 151;
 
   padding-bottom: 50px;
-  width: 100%;
 }
 
 .review-form_modal-success {
-  bottom: 108px;
-
-  width: 100%;
+  top: 380px;
+  left: 50%;
+  margin-left: -160px;
+  z-index: 150;
 }
 
 .review-form_modal-header {
@@ -114,21 +116,20 @@
   }
 
   .review-form_modal-failure {
-    bottom: 224px;
-    left: 184px;
-    z-index: 97;
+    left: 50%;
+    margin-left: -200px;
 
     padding-top: 55px;
     padding-bottom: 50px;
-    width: 52.2%;
+    width: 400px;
   }
 
   .review-form_modal-success {
-    bottom: 386px;
-    left: 63px;
+    left: 50%;
+    margin-left: -320px;
 
     padding-top: 60px;
-    width: 83.5%;
+    width: 640px;
   }
 
   .review-form_modal-header {
@@ -169,20 +170,6 @@
     padding-right: 120px;
     padding-left: 120px;
     padding-bottom: 46px;
-  }
-
-  .review-form_modal-failure {
-    bottom: 112px;
-    left: 400px;
-
-    width: 33.4%;
-  }
-
-  .review-form_modal-success {
-    bottom: 380px;
-    left: 278px;
-
-    width: 53.4%;
   }
 
   .review-form_modal-success .review-form_modal-paragraph {

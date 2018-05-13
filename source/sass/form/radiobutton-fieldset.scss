@@ -51,6 +51,10 @@
   }
 }
 
+.radiobutton-fieldset__input:disabled + .radiobutton-fieldset__label::before {
+  opacity: 0.25;
+}
+
 .radiobutton-fieldset__input:checked + .radiobutton-fieldset__label::before {
   display: block;
   content: " ";
