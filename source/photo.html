@@ -155,18 +155,21 @@
           <div class="video-presentation__video">
             <video class="video-presentation__video-player"></video>
             <div class="video-presentation__video-control">
-              <div class="video-presentation__video-replay">
+              <div class="video-presentation__video-replay" tabindex="0">
+                <span class="visually-hidden">Проиграть видео заново</span>
                 <svg class="video-presentation__video-control-icon" width="16" height="20">
                   <use xlink:href="#icon-video-replay"/>
                 </svg>
               </div>
-              <div class="video-presentation__video-bar"></div>
-              <div class="video-presentation__video-subtitle">
+              <div class="video-presentation__video-bar" tabindex="0"></div>
+              <div class="video-presentation__video-subtitle" tabindex="0">
+                <span class="visually-hidden">Включить/выключить субтитры</span>
                 <svg class="video-presentation__video-control-icon" width="32" height="20">
                   <use xlink:href="#icon-video-subtitles"/>
                 </svg>
               </div>
-              <div class="video-presentation__video-fullscreeen">
+              <div class="video-presentation__video-fullscreeen" tabindex="0">
+                <span class="visually-hidden">Развернуть/свернуть на весь экран</span>
                 <svg class="video-presentation__video-control-icon" width="20" height="20">
                   <use xlink:href="#icon-video-fullscreen"/>
                 </svg>

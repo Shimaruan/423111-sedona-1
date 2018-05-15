@@ -40,15 +40,14 @@
 
   border-radius: 50%;
   background-color: $form-field_bg-color;
+}
 
+.radiobutton-fieldset__input + .radiobutton-fieldset__label:hover::before {
+  background-color: #e5e5e5;
+}
 
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:active {
-    background-color: #d5d5d5;
-  }
+.radiobutton-fieldset__input + .radiobutton-fieldset__label:active::before {
+  background-color: #d5d5d5;
 }
 
 .radiobutton-fieldset__input:disabled + .radiobutton-fieldset__label::before {
@@ -68,16 +67,15 @@
   border-style: solid;
   border-color: $form-field_bg-color;
   background-color: #333333;
+}
 
+.radiobutton-fieldset__input:checked + .radiobutton-fieldset__label:hover::before {
+  border-color: #e5e5e5;
+}
 
-  &:hover {
-    border-color: #e5e5e5;
-  }
-
-  &:active {
-    border-color: #d5d5d5;
-    background-color: #a4a4a4;
-  }
+.radiobutton-fieldset__input:checked + .radiobutton-fieldset__label:active::before {
+  border-color: #d5d5d5;
+  background-color: #a4a4a4;
 }
 
 .radiobutton-fieldset__input:focus + .radiobutton-fieldset__label::before {

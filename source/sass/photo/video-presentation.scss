@@ -76,6 +76,7 @@
   height: 45px;
 
   background-color: rgba(0, 0, 0, 0.6);
+  outline-color: #dc6243;
 }
 
 .video-presentation__video-bar::after {
@@ -109,17 +110,23 @@
   margin-right: auto;
   width: 16px;
   height: 20px;
+
+  outline-color: #dc6243;
 }
 
 .video-presentation__video-subtitle {
   margin-right: 30px;
   width: 32px;
   height: 20px;
+
+  outline-color: #dc6243;
 }
 
 .video-presentation__video-fullscreeen {
   width: 20px;
   height: 20px;
+
+  outline-color: #dc6243;
 }
 
 .video-presentation__video-control-icon {

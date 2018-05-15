@@ -1,11 +1,17 @@
 .footer-social {
   @include idents-reset();
   display: flex;
-  justify-content: space-between;
   margin-bottom: 37px;
-  width: 150px;
 
   list-style: none;
+}
+
+.footer-social__item {
+  margin-right: 6px;
+}
+
+.footer-social__item:last-child {
+  margin-right: 0;
 }
 
 .footer-social__button {
